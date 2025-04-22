@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body text-center">
+                    <i class="fas fa-receipt fa-3x mb-3"></i>
+                    <h5 class="card-title">Order Sales</h5>
+                    <p class="card-text">List of Orders. You can add, edit, or delete orders and their items in this page!</p>
+                    <button id="btnOrder" class="btn btn-primary">
+                        Orders
+                    </button>
+                </div>
+            </div>
+        </div>
+        @* <div class="col-md-6 d-flex align-items-stretch">
+            <div class="card">
+                <div class="card-body text-center">
+                    <i class="fas fa-capsules fa-3x mb-3"></i>
+                    <h5 class="card-title">Event</h5>
+                    <p class="card-text">Kumpulan dari event-event kotak anda. Page ini dapat berupa status dari nomor resi anda yang sudah dipakai atau dibatalkan ataupun alarm kotak anda!</p>
+                    <button id="btnEvent" class="btn btn-primary">
+                        Notifikasi
+                    </button>
+                </div>
+            </div>
+        </div> *@
+    </div>
+</div>
+
+<script>
+    $(document).ready(() => {
+        $("#btnOrder").click(function (e) {
+            location.href = "/Order";
+        });
+    });
+</script>

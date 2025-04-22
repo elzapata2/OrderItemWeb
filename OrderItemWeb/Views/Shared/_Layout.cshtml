@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - SmartBox</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/HealthCare340B.Web.styles.css" asp-append-version="true" />
+
+    <!-- Mazer -->
+    <link rel="stylesheet" crossorigin href="~/lib/mazer/compiled/css/app.css">
+    <link rel="stylesheet" crossorigin href="~/lib/mazer/compiled/css/app-dark.css">
+    <link rel="stylesheet" crossorigin href="~/lib/mazer/compiled/css/iconly.css">
+    <link rel="stylesheet" href="~/lib/font-awesome/css/all.css" />
+
+    <!-- Jquery Library -->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+    <!-- Jquery Validation -->
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/3.1.18/signalr.min.js"></script>
+</head>
+<body>
+    <script src="~/lib/mazer/static/js/initTheme.js"></script>
+    <div id="app">
+        <div id="main" class="layout-navbar navbar-fixed" style="margin-left: 0px">
+            <partial name="_Header" />
+
+            <div id="main-content">
+                <div class="page-content">
+                    <div id="alarmEvent"></div>
+                </div>
+                @RenderBody()
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <partial name="_Footer" />
+
+        <!--Modal-->
+        <partial name="_Modal" />
+
+        <!-- Toast Alert -->
+        <partial name="_Toast" />
+
+    </div>
+
+    @*<script src="~/js/site.js" asp-append-version="true"></script>*@
+
+    <!-- Mazer -->
+    <script src="~/lib/mazer/static/js/components/dark.js"></script>
+    <script src="~/lib/mazer/extensions/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="~/lib/mazer/compiled/js/app.js"></script>
+
+    <!-- Need: Apexcharts -->
+    @*<script src="~/lib/mazer/extensions/apexcharts/apexcharts.min.js"></script>
+    <script src="~/lib/mazer/static/js/pages/dashboard.js"></script>*@
+
+    <script>
+        let spinner = "<div class='d-flex justify-content-center'>" +
+            "<div class='spinner-border' role='status'>" +
+            "<span class='visually-hidden'>Loading...</span>" +
+            "</div>" +
+            "</div>";
+    </script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

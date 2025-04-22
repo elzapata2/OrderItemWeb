@@ -1,0 +1,95 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<div class="text-center" style="background-color: gray;">
+    <h3 class="mt-2">Sales Order Information <i class="fas fa-level-down-alt"></i></h3>
+</div>
+
+<div class="mt-1">
+    <div class="row m-5">
+        <div class="col-5">
+            <div class="input-group mb-3">
+                <label class="input-group-text col-3 text-light">Keyword</label>
+                <input id="keyword" type="text" class="form-control col-9" name="Keyword" />
+            </div>
+        </div>
+        <div class="col-2">
+        </div>
+        <div class="col-5">
+            <div class="input-group mb-3">
+                <label class="input-group-text col-3 text-light">Customer</label>
+                @* <input id="customer" type="text" class="form-control col-9" name="Customer" /> *@
+                <select class="form-select"></select>
+            </div>
+        </div>
+    </div>
+    <div class="row m-5">
+        <div class="col-5">
+            <div class="input-group mb-3">
+                <label class="input-group-text col-3 text-light">Order Date</label>
+                <input id="orderDate" type="text" class="form-control col-9" name="Date" />
+            </div>
+        </div>
+        <div class="col-2">
+        </div>
+        <div class="col-5">
+            <div class="input-group mb-3">
+                <label class="input-group-text col-3 text-light">Address</label>
+                <textarea class="form-control" id="address" rows="3" name="Address"></textarea>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="align-middle text-center" style="background-color: gray;">
+    <h3 class="mt-2">Detail Item Information <i class="fas fa-level-down-alt"></i></h3>
+</div>
+
+<div class="row mt-4">
+    <div class="col-3">
+        <button id="btnAddItem" type="button" class="btn btn-light-primary mb-4 text-light"><span>Add New Data</span></button>
+    </div>
+</div>
+
+<div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th class="col-2">No</th>
+                <th class="col-2">Action</th>
+                <th class="col-2">Item Name</th>
+                <th class="col-2">Qty</th>
+                <th class="col-2">Price</th>
+                <th class="col-2">Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>
+                    <div class="btn-group" role="group">
+                        <button class="btn btn-outline-info" title="Edit..."
+                                data-bs-toggle="modal" data-bs-target="#staticModal">
+                            <i class="fas fa-edit"></i>
+                        </button>
+                        &nbsp;
+                        <button class="btn btn-outline-danger" title="Delete..."
+                                data-bs-toggle="modal" data-bs-target="#staticModal">
+                            <i class="fas fa-trash-alt"></i>
+                        </button>
+                    </div>
+                </td>
+                <td><div contenteditable>Placebo</div></td>
+                <td><div contenteditable>2</div></td>
+                <td><div contenteditable>8.000.000</div></td>
+                <td><div contenteditable>16.000.000</div></td>
+            </tr>
+            <tr>
+                <td colspan="6" style="text-align:right;">Total Item: 2 &nbsp;&nbsp;&nbsp;&nbsp; Total Amount: 16.000.000</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
