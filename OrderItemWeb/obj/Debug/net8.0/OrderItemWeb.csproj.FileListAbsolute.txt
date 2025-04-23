@@ -531,3 +531,5 @@ C:\Users\Zapata\Documents\.NET Projects\Git\OrderItemWeb\OrderItemWeb\obj\Debug\
 C:\Users\Zapata\Documents\.NET Projects\Git\OrderItemWeb\OrderItemWeb\obj\Debug\net8.0\OrderItemWeb.pdb
 C:\Users\Zapata\Documents\.NET Projects\Git\OrderItemWeb\OrderItemWeb\obj\Debug\net8.0\OrderItemWeb.genruntimeconfig.cache
 C:\Users\Zapata\Documents\.NET Projects\Git\OrderItemWeb\OrderItemWeb\obj\Debug\net8.0\ref\OrderItemWeb.dll
+C:\Users\Zapata\Documents\.NET Projects\Git\OrderItemWeb\OrderItemWeb\bin\Debug\net8.0\OrderItemViewModel.dll
+C:\Users\Zapata\Documents\.NET Projects\Git\OrderItemWeb\OrderItemWeb\bin\Debug\net8.0\OrderItemViewModel.pdb

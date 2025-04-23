@@ -4,10 +4,9 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
-using BattleshipViewModel;
+using OrderItemViewModel;
 using Microsoft.EntityFrameworkCore.Storage;
 using OrderItemModel;
-using OrderItemViewModel;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace OrderItemDataAccess
@@ -41,18 +40,18 @@ namespace OrderItemDataAccess
                         ComCustomerId = ord.ComCustomerId,
                         ComCustomerName = cust.CustomerName,
                         Address = ord.Address,
-                        Items = (
-                            from item in db.SoItems
-                            where item.SoOrderId == ord.SoOrderId
-                            select new VMSoItem
-                            {
-                                SoItemId = item.SoItemId,
-                                SoOrderId = item.SoOrderId,
-                                ItemName = item.ItemName,
-                                Quantity = item.Quantity,
-                                Price = item.Price
-                            }
-                            ).ToList()
+                        //Items = (
+                        //    from item in db.SoItems
+                        //    where item.SoOrderId == ord.SoOrderId
+                        //    select new VMSoItem
+                        //    {
+                        //        SoItemId = item.SoItemId,
+                        //        SoOrderId = item.SoOrderId,
+                        //        ItemName = item.ItemName,
+                        //        Quantity = item.Quantity,
+                        //        Price = item.Price
+                        //    }
+                        //    ).ToList()
                     }
                     ).Skip((page - 1) * itemsPerPage).Take(itemsPerPage).ToList();
 

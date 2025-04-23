@@ -1,10 +1,9 @@
 ﻿using System.Net;
-using BattleshipViewModel;
+using OrderItemViewModel;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using OrderItemDataAccess;
 using OrderItemModel;
-using OrderItemViewModel;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace OrderItemAPI.Controllers
@@ -34,6 +33,7 @@ namespace OrderItemAPI.Controllers
                 else
                 {
                     DateTime parsedDate;
+
                     if (DateTime.TryParse(searchDate, out parsedDate))
                         response = await Task.Run(() => order.GetOrders(keyword, parsedDate, page, itemsperpage));
                     else

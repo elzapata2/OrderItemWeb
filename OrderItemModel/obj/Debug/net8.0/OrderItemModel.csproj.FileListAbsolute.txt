@@ -48,3 +48,5 @@ C:\Users\Zapata\Documents\.NET Projects\Git\OrderItemWeb\OrderItemModel\obj\Debu
 C:\Users\Zapata\Documents\.NET Projects\Git\OrderItemWeb\OrderItemModel\obj\Debug\net8.0\OrderItemModel.pdb
 C:\Users\Zapata\Documents\.NET Projects\Git\OrderItemWeb\OrderItemModel\obj\Debug\net8.0\OrderItemModel.genruntimeconfig.cache
 C:\Users\Zapata\Documents\.NET Projects\Git\OrderItemWeb\OrderItemModel\obj\Debug\net8.0\ref\OrderItemModel.dll
+C:\Users\Zapata\Documents\.NET Projects\Git\OrderItemWeb\OrderItemModel\bin\Debug\net8.0\OrderItemViewModel.dll
+C:\Users\Zapata\Documents\.NET Projects\Git\OrderItemWeb\OrderItemModel\bin\Debug\net8.0\OrderItemViewModel.pdb

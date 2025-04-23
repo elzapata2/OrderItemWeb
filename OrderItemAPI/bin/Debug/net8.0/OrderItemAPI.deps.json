@@ -1987,7 +1987,8 @@
       "OrderItemWeb/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.15",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "8.0.7"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "8.0.7",
+          "OrderItemViewModel": "1.0.0"
         },
         "runtime": {
           "OrderItemWeb.dll": {

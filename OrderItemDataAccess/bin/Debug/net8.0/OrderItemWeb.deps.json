@@ -12,6 +12,7 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.15",
           "Microsoft.EntityFrameworkCore.Tools": "8.0.15",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "8.0.7",
+          "OrderItemViewModel": "1.0.0",
           "OrderItemModel": "1.0.0.0"
         },
         "runtime": {
@@ -1904,6 +1905,14 @@
           }
         }
       },
+      "OrderItemViewModel/1.0.0": {
+        "runtime": {
+          "OrderItemViewModel.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "OrderItemModel/1.0.0.0": {
         "runtime": {
           "OrderItemModel.dll": {
@@ -3025,6 +3034,11 @@
       "sha512": "sha512-bR4qdCmssMMbo9Fatci49An5B1UaVJZHKNq70PRgzoLYIlitb8Tj7ns/Xt5Pz1CkERiTjcVBDU2y1AVrPBYkaw==",
       "path": "system.windows.extensions/7.0.0",
       "hashPath": "system.windows.extensions.7.0.0.nupkg.sha512"
+    },
+    "OrderItemViewModel/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "OrderItemModel/1.0.0.0": {
       "type": "reference",

@@ -1,6 +1,7 @@
 ﻿@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
+@model List<VMSoOrder>
 @{
 }
 
@@ -46,25 +47,31 @@
             </tr>
         </thead>
         <tbody>
-           <tr>
-                <td>1</td>
-                <td>
-                    <div class="btn-group" role="group">
-                        <button class="btn btn-outline-info" title="Edit..."
-                                data-bs-toggle="modal" data-bs-target="#staticModal">
-                            <i class="fas fa-edit"></i>
-                        </button>
-                        &nbsp;
-                        <button class="btn btn-outline-danger" title="Delete..."
-                                data-bs-toggle="modal" data-bs-target="#staticModal">
-                            <i class="fas fa-trash-alt"></i>
-                        </button>
-                    </div>
-                </td>
-                <td>Placebo</td>
-                <td>01/01/0001</td>
-                <td>User</td>
-           </tr>
+            
+                @if (Model.Count > 0)
+                {
+                    foreach(VMSoOrder order in Model)
+                    {
+                    <tr>
+                        <td>@order.SoOrderId</td>
+                        <td>
+                            <div class="btn-group" role="group">
+                                <button id="btnEditOrder" data-id="@order.SoOrderId" class="btn btn-outline-info" title="Edit...">
+                                    <i class="fas fa-edit"></i>
+                                </button>
+                                &nbsp;
+                                <button id="btnDeleteOrder" data-id="@order.OrderNo" class="btn btn-outline-danger" title="Delete..." data-bs-target="#staticModal">
+                                    <i class="fas fa-trash-alt"></i>
+                                </button>
+                            </div>
+                        </td>
+                        <td>@order.OrderNo</td>
+                        <td>@order.OrderDate.ToString("dd/M/yyyy")</td>
+                        <td>@order.ComCustomerName</td>
+                    </tr>
+                    }
+                }               
+           
         </tbody>
     </table>
 </div>
@@ -72,7 +79,18 @@
 <script>
     $(document).ready(() => {
         $("#btnAddOrder").click(function (e) {
-            location.href = "/Order/CreateEdit/";
+            location.href = "/Order/CreateEdit";
+        });
+
+        $(".btn-outline-info").click(function (e) {
+            var orderId = $(this).data("id");
+            location.href = `/Order/CreateEdit?orderId=${orderId}`;
+        });
+
+        $(".btn-outline-danger").click(function(e) {
+            var orderNo = $(this).data("id");
+            $("#staticModalBody").load(`/Order/DeleteOrder/?orderNo=${orderNo}`);
+            $("#staticModal").modal("show");
         });
     });
 </script>

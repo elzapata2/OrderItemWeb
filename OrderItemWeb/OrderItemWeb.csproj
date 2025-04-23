@@ -20,6 +20,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\OrderItemViewModel\OrderItemViewModel.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="OrderItemModel">
       <HintPath>..\OrderItemModel\bin\Debug\net8.0\OrderItemModel.dll</HintPath>
     </Reference>
