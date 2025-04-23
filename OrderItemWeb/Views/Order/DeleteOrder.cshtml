@@ -26,5 +26,27 @@
 </div>
 
 <script>
-    $("#staticModalLabel").text("@ViewBag.Title");
+    $(document).ready(() => {
+        $("#staticModalLabel").text("@ViewBag.Title");
+
+        $("#btnDelete").click(function(e) {
+            $.ajax({
+                url: "/Order/DeleteOrder",
+                type: "post",
+                data: {
+                    "soOrderId": @ViewBag.OrderId
+                },
+                datatype: "json",
+                success: function(response) {
+                    location.reload();
+                },
+                error: function(req) {
+                    var err = req.responseText.split(": ");
+                    var message = err[1].split(" at");
+                    message = $.trim(message[0]);
+                    toastAlert(message, "error");
+                }
+            });
+        });
+    })
 </script>

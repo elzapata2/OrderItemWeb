@@ -64,6 +64,36 @@ namespace OrderItemAPI.Controllers
             }
         }
 
+        [HttpGet("[action]")]
+        public async Task<ActionResult> GetOrderWithItems(long orderId, int page, int itemsPerPage)
+        {
+            VMResponse<VMSoOrder> response = new VMResponse<VMSoOrder>();
+
+            try
+            {
+                response = await Task.Run(() => order.GetOrderWithItems(orderId, page, itemsPerPage));
+
+                if (response.StatusCode == HttpStatusCode.OK)
+                {
+                    return Ok(response);
+                }
+                else if (response.StatusCode == HttpStatusCode.BadRequest)
+                {
+                    return BadRequest(response);
+                }
+                else
+                {
+                    return StatusCode((int)response.StatusCode, response);
+                }
+            }
+            catch (Exception ex)
+            {
+                response.StatusCode = HttpStatusCode.InternalServerError;
+                response.Message = $"{HttpStatusCode.InternalServerError} - From OrderController.GetOrderWithItems: {ex.Message}";
+                return StatusCode((int)response.StatusCode, response);
+            }
+        }
+
         [HttpPost("[action]")]
         public async Task<ActionResult> AddOrder(VMSoOrder data)
         {

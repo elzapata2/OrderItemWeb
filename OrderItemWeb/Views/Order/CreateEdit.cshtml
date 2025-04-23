@@ -1,6 +1,7 @@
 ﻿@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
+@model VMSoOrder
 @{
 }
 
@@ -67,29 +68,47 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>1</td>
-                <td>
-                    <div class="btn-group" role="group">
-                        <button class="btn btn-outline-info" title="Edit..."
-                                data-bs-toggle="modal" data-bs-target="#staticModal">
-                            <i class="fas fa-edit"></i>
-                        </button>
-                        &nbsp;
-                        <button class="btn btn-outline-danger" title="Delete..."
-                                data-bs-toggle="modal" data-bs-target="#staticModal">
-                            <i class="fas fa-trash-alt"></i>
-                        </button>
-                    </div>
-                </td>
-                <td><div contenteditable>Placebo</div></td>
-                <td><div contenteditable>2</div></td>
-                <td><div contenteditable>8.000.000</div></td>
-                <td><div contenteditable>16.000.000</div></td>
-            </tr>
-            <tr>
-                <td colspan="6" style="text-align:right;">Total Item: 2 &nbsp;&nbsp;&nbsp;&nbsp; Total Amount: 16.000.000</td>
-            </tr>
+            @if (Model.Items != null && Model.Items.Count > 0)
+            {
+                long num = Model.Items[0].SoItemId - (Model.Items[0].SoItemId - 1);
+                int totalItem = 0;
+                double totalAmount = 0;
+
+                foreach(VMSoItem item in Model.Items)
+                {
+                    <tr>
+                        <td>@num</td>
+                        <td>
+                            <div class="btn-group" role="group">
+                                <button class="btn btn-outline-info" title="Edit..."
+                                        data-bs-toggle="modal" data-bs-target="#staticModal">
+                                    <i class="fas fa-edit"></i>
+                                </button>
+                                &nbsp;
+                                <button class="btn btn-outline-danger" title="Delete..."
+                                        data-bs-toggle="modal" data-bs-target="#staticModal">
+                                    <i class="fas fa-trash-alt"></i>
+                                </button>
+                            </div>
+                        </td>
+                        <td><div contenteditable>@item.ItemName</div></td>
+                        <td><div contenteditable>@item.Quantity</div></td>
+                        <td><div contenteditable>@item.Price</div></td>
+                        <td><div contenteditable>@((item.Price * item.Quantity).ToString("C"))</div></td>
+                    </tr>
+
+                    num += 1;
+                    totalItem += item.Quantity;
+                    totalAmount += item.Price * item.Quantity;
+                }
+
+                <tr>
+                    <td colspan="3"></td>
+                    <td>Total Item: @totalItem</td>
+                    <td></td>
+                    <td>Total Amount: @totalAmount.ToString("C")</td>
+                </tr>
+            }          
         </tbody>
     </table>
 </div>

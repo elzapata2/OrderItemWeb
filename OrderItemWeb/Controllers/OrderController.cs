@@ -28,23 +28,64 @@ namespace OrderItemWeb.Controllers
             catch (Exception ex)
             {
                 response.StatusCode = HttpStatusCode.InternalServerError;
-                response.Message = $"{HttpStatusCode.InternalServerError} - From OrderController: {ex.Message}";
+                response.Message = $"{HttpStatusCode.InternalServerError} - From OrderController.Index: {ex.Message}";
                 response.Data = new List<VMSoOrder>();
             }
 
             return View(response.Data);
         }
 
-        public IActionResult CreateEdit(long? orderId)
+        public async Task<IActionResult> CreateEdit(long? orderId, int? page, int? pageSize)
         {
+            VMResponse<VMSoOrder> response = new VMResponse<VMSoOrder>();
+
+            page = (page == null) ? defaultPage : page;
+            pageSize = (pageSize == null) ? defaultPageSize : pageSize;
+
+            if (orderId == null)
+            {
+                response.Data = new VMSoOrder();
+                return View(response.Data);
+            }
+
+            try
+            {
+                response = await order.GetOrderWithItems((long)orderId, (int)page, (int)pageSize);
+            }
+            catch (Exception ex)
+            {
+                response.StatusCode = HttpStatusCode.InternalServerError;
+                response.Message = $"{HttpStatusCode.InternalServerError} - From OrderController.CreateEdit: {ex.Message}";
+                response.Data = new VMSoOrder();
+            }
+
+            return View(response.Data);
+        }
+
+        public IActionResult DeleteOrder(string orderNo, long orderId)
+        {
+            ViewBag.OrderNo = orderNo;
+            ViewBag.OrderId = orderId;
+            ViewBag.Title = "Delete Order";
             return View();
         }
 
-        public IActionResult DeleteOrder(string orderNo)
+        [HttpPost]
+        public async Task<VMResponse<VMSoOrder>> DeleteOrderAsync(VMSoOrder data)
         {
-            ViewBag.OrderNo = orderNo;
-            ViewBag.Title = "Delete Order";
-            return View();
+            VMResponse<VMSoOrder> response = new VMResponse<VMSoOrder>();
+
+            try
+            {
+                response = await order.DeleteOrder(data.SoOrderId);
+            }
+            catch (Exception ex)
+            {
+                response.StatusCode = HttpStatusCode.InternalServerError;
+                response.Message = $"{HttpStatusCode.InternalServerError} - From OrderController.DeleteOrderAsync: {ex.Message}";
+            }
+
+            return response;
         }
     }
 }

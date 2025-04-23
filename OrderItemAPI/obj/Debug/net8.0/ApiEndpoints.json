@@ -64,6 +64,32 @@
   },
   {
     "ContainingType": "OrderItemAPI.Controllers.OrderController",
+    "Method": "GetOrderWithItems",
+    "RelativePath": "api/Order/GetOrderWithItems",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderId",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "itemsPerPage",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OrderItemAPI.Controllers.OrderController",
     "Method": "UpdateOrder",
     "RelativePath": "api/Order/UpdateOrder",
     "HttpMethod": "PUT",

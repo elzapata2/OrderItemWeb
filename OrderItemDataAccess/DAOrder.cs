@@ -77,6 +77,60 @@ namespace OrderItemDataAccess
             return response;
         }
 
+        public VMResponse<VMSoOrder> GetOrderWithItems(long orderId, int page, int itemsPerPage)
+        {
+            VMResponse<VMSoOrder> response = new VMResponse<VMSoOrder>();
+
+            try
+            {
+                VMSoOrder? data = (
+                    from ord in db.SoOrders
+                    join cust in db.ComCustomers on ord.ComCustomerId equals cust.ComCustomerId
+                    where ord.SoOrderId == orderId
+                    select new VMSoOrder
+                    {
+                        SoOrderId = ord.SoOrderId,
+                        OrderNo = ord.OrderNo,
+                        OrderDate = ord.OrderDate,
+                        ComCustomerId = ord.ComCustomerId,
+                        ComCustomerName = cust.CustomerName,
+                        Address = ord.Address,
+                        Items = (
+                            from item in db.SoItems
+                            where item.SoOrderId == ord.SoOrderId
+                            select new VMSoItem
+                            {
+                                SoItemId = item.SoItemId,
+                                SoOrderId = item.SoOrderId,
+                                ItemName = item.ItemName,
+                                Quantity = item.Quantity,
+                                Price = item.Price
+                            }
+                            ).Skip((page - 1) * itemsPerPage).Take(itemsPerPage).ToList()
+                    }
+                    ).FirstOrDefault();
+
+                if (data != null)
+                {
+                    response.StatusCode = HttpStatusCode.OK;
+                    response.Message = $"{HttpStatusCode.OK} - Successfully fetched the data";
+                    response.Data = data;
+                }
+                else
+                {
+                    response.StatusCode = HttpStatusCode.BadRequest;
+                    response.Message = $"{HttpStatusCode.BadRequest} - No order data was Found!";
+                }
+            }
+            catch (Exception ex)
+            {
+                response.StatusCode = HttpStatusCode.InternalServerError;
+                response.Message = $"{HttpStatusCode.InternalServerError} - From DAOrder.GetOrderWithItems: {ex.Message}";
+            }
+
+            return response;
+        }
+
         public VMResponse<VMSoOrder> AddOrder(VMSoOrder data)
         {
             VMResponse<VMSoOrder> response = new VMResponse<VMSoOrder>();
@@ -241,7 +295,19 @@ namespace OrderItemDataAccess
                             OrderNo = ord.OrderNo,
                             OrderDate = ord.OrderDate,
                             ComCustomerId = ord.ComCustomerId,
-                            Address = ord.Address
+                            Address = ord.Address,
+                            Items = (
+                                from item in db.SoItems
+                                where item.SoOrderId == ord.SoOrderId
+                                select new VMSoItem
+                                {
+                                    SoItemId = item.SoItemId,
+                                    SoOrderId = item.SoOrderId,
+                                    ItemName = item.ItemName,
+                                    Quantity = item.Quantity,
+                                    Price = item.Price
+                                }
+                                ).ToList()
                         }
                         ).FirstOrDefault();
 
@@ -286,7 +352,7 @@ namespace OrderItemDataAccess
                                 Price = existingItemData.Price
                             };
 
-                            db.Update(removedItemData);
+                            db.Remove(removedItemData);
                             db.SaveChanges();
                         }
                     }

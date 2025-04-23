@@ -13,6 +13,190 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\font-awesome\\css\\all.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\all.css"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\font-awesome\\css\\all.min.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\all.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\font-awesome\\css\\brands.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\brands.css"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\font-awesome\\css\\brands.min.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\brands.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\font-awesome\\css\\fontawesome.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\fontawesome.css"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\font-awesome\\css\\fontawesome.min.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\fontawesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\font-awesome\\css\\regular.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\regular.css"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\font-awesome\\css\\regular.min.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\regular.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\font-awesome\\css\\solid.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\solid.css"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\font-awesome\\css\\solid.min.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\solid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\font-awesome\\css\\svg-with-js.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\svg-with-js.css"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\font-awesome\\css\\svg-with-js.min.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\svg-with-js.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\font-awesome\\css\\v4-shims.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\v4-shims.css"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\font-awesome\\css\\v4-shims.min.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\v4-shims.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\font-awesome\\js\\all.js",
+      "PackagePath": "staticwebassets\\font-awesome\\js\\all.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\font-awesome\\js\\all.min.js",
+      "PackagePath": "staticwebassets\\font-awesome\\js\\all.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\font-awesome\\js\\brands.js",
+      "PackagePath": "staticwebassets\\font-awesome\\js\\brands.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\font-awesome\\js\\brands.min.js",
+      "PackagePath": "staticwebassets\\font-awesome\\js\\brands.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\font-awesome\\js\\conflict-detection.js",
+      "PackagePath": "staticwebassets\\font-awesome\\js\\conflict-detection.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\font-awesome\\js\\conflict-detection.min.js",
+      "PackagePath": "staticwebassets\\font-awesome\\js\\conflict-detection.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\font-awesome\\js\\fontawesome.js",
+      "PackagePath": "staticwebassets\\font-awesome\\js\\fontawesome.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\font-awesome\\js\\fontawesome.min.js",
+      "PackagePath": "staticwebassets\\font-awesome\\js\\fontawesome.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\font-awesome\\js\\regular.js",
+      "PackagePath": "staticwebassets\\font-awesome\\js\\regular.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\font-awesome\\js\\regular.min.js",
+      "PackagePath": "staticwebassets\\font-awesome\\js\\regular.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\font-awesome\\js\\solid.js",
+      "PackagePath": "staticwebassets\\font-awesome\\js\\solid.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\font-awesome\\js\\solid.min.js",
+      "PackagePath": "staticwebassets\\font-awesome\\js\\solid.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\font-awesome\\js\\v4-shims.js",
+      "PackagePath": "staticwebassets\\font-awesome\\js\\v4-shims.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\font-awesome\\js\\v4-shims.min.js",
+      "PackagePath": "staticwebassets\\font-awesome\\js\\v4-shims.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\font-awesome\\sprites\\brands.svg",
+      "PackagePath": "staticwebassets\\font-awesome\\sprites\\brands.svg"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\font-awesome\\sprites\\regular.svg",
+      "PackagePath": "staticwebassets\\font-awesome\\sprites\\regular.svg"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\font-awesome\\sprites\\solid.svg",
+      "PackagePath": "staticwebassets\\font-awesome\\sprites\\solid.svg"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\font-awesome\\webfonts\\fa-brands-400.eot",
+      "PackagePath": "staticwebassets\\font-awesome\\webfonts\\fa-brands-400.eot"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\font-awesome\\webfonts\\fa-brands-400.svg",
+      "PackagePath": "staticwebassets\\font-awesome\\webfonts\\fa-brands-400.svg"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\font-awesome\\webfonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\font-awesome\\webfonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\font-awesome\\webfonts\\fa-brands-400.woff",
+      "PackagePath": "staticwebassets\\font-awesome\\webfonts\\fa-brands-400.woff"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\font-awesome\\webfonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\font-awesome\\webfonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\font-awesome\\webfonts\\fa-regular-400.eot",
+      "PackagePath": "staticwebassets\\font-awesome\\webfonts\\fa-regular-400.eot"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\font-awesome\\webfonts\\fa-regular-400.svg",
+      "PackagePath": "staticwebassets\\font-awesome\\webfonts\\fa-regular-400.svg"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\font-awesome\\webfonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\font-awesome\\webfonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\font-awesome\\webfonts\\fa-regular-400.woff",
+      "PackagePath": "staticwebassets\\font-awesome\\webfonts\\fa-regular-400.woff"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\font-awesome\\webfonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\font-awesome\\webfonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\font-awesome\\webfonts\\fa-solid-900.eot",
+      "PackagePath": "staticwebassets\\font-awesome\\webfonts\\fa-solid-900.eot"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\font-awesome\\webfonts\\fa-solid-900.svg",
+      "PackagePath": "staticwebassets\\font-awesome\\webfonts\\fa-solid-900.svg"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\font-awesome\\webfonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\font-awesome\\webfonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\font-awesome\\webfonts\\fa-solid-900.woff",
+      "PackagePath": "staticwebassets\\font-awesome\\webfonts\\fa-solid-900.woff"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\font-awesome\\webfonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\font-awesome\\webfonts\\fa-solid-900.woff2"
+    },
+    {
       "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
@@ -195,6 +379,1342 @@
     {
       "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\ar-dz.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\ar-dz.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\ar-dz.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\ar-dz.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\ar.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\ar.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\ar.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\ar.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\at.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\at.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\at.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\at.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\az.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\az.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\az.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\az.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\be.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\be.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\be.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\be.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\bg.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\bg.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\bg.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\bg.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\bn.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\bn.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\bn.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\bn.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\bs.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\bs.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\bs.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\bs.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\cat.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\cat.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\cat.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\cat.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\ckb.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\ckb.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\ckb.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\ckb.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\cs.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\cs.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\cs.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\cs.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\cy.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\cy.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\cy.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\cy.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\da.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\da.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\da.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\da.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\de.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\de.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\de.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\de.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\default.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\default.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\default.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\default.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\eo.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\eo.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\eo.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\eo.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\es.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\es.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\es.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\es.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\et.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\et.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\et.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\et.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\fa.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\fa.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\fa.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\fa.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\fi.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\fi.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\fi.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\fi.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\fo.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\fo.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\fo.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\fo.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\fr.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\fr.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\fr.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\fr.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\ga.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\ga.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\ga.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\ga.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\gr.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\gr.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\gr.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\gr.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\he.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\he.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\he.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\he.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\hi.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\hi.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\hi.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\hi.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\hr.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\hr.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\hr.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\hr.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\hu.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\hu.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\hu.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\hu.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\hy.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\hy.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\hy.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\hy.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\id.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\id.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\id.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\id.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\is.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\is.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\is.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\is.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\it.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\it.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\it.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\it.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\ja.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\ja.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\ja.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\ja.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\ka.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\ka.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\ka.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\ka.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\km.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\km.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\km.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\km.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\ko.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\ko.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\ko.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\ko.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\kz.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\kz.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\kz.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\kz.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\lt.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\lt.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\lt.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\lt.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\lv.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\lv.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\lv.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\lv.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\mk.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\mk.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\mk.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\mk.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\mn.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\mn.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\mn.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\mn.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\ms.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\ms.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\ms.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\ms.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\my.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\my.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\my.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\my.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\nl.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\nl.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\nl.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\nl.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\nn.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\nn.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\nn.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\nn.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\no.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\no.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\no.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\no.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\pa.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\pa.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\pa.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\pa.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\pl.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\pl.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\pl.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\pl.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\pt.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\pt.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\pt.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\pt.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\ro.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\ro.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\ro.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\ro.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\ru.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\ru.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\ru.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\ru.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\si.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\si.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\si.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\si.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\sk.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\sk.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\sk.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\sk.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\sl.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\sl.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\sl.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\sl.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\sq.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\sq.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\sq.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\sq.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\sr-cyr.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\sr-cyr.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\sr-cyr.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\sr-cyr.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\sr.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\sr.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\sr.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\sr.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\sv.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\sv.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\sv.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\sv.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\th.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\th.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\th.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\th.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\tr.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\tr.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\tr.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\tr.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\uk.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\uk.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\uk.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\uk.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\uz.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\uz.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\uz.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\uz.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\uz_latn.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\uz_latn.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\uz_latn.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\uz_latn.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\vn.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\vn.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\vn.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\vn.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\zh-tw.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\zh-tw.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\zh-tw.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\zh-tw.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\zh.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\zh.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\l10n\\zh.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\zh.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\plugins\\confirmdate\\confirmdate.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\plugins\\confirmdate\\confirmdate.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\plugins\\confirmdate\\confirmdate.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\plugins\\confirmdate\\confirmdate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\plugins\\labelplugin\\labelplugin.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\plugins\\labelplugin\\labelplugin.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\plugins\\labelplugin\\labelplugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\plugins\\labelplugin\\labelplugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\plugins\\minmaxtimeplugin.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\plugins\\minmaxtimeplugin.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\plugins\\minmaxtimeplugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\plugins\\minmaxtimeplugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\plugins\\momentplugin.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\plugins\\momentplugin.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\plugins\\momentplugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\plugins\\momentplugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\plugins\\rangeplugin.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\plugins\\rangeplugin.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\plugins\\rangeplugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\plugins\\rangeplugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\plugins\\scrollplugin.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\plugins\\scrollplugin.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\plugins\\scrollplugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\plugins\\scrollplugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\plugins\\weekselect\\weekselect.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\plugins\\weekselect\\weekselect.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\plugins\\weekselect\\weekselect.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\plugins\\weekselect\\weekselect.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\types\\globals.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\types\\globals.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\types\\globals.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\types\\globals.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\types\\instance.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\types\\instance.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\types\\instance.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\types\\instance.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\types\\locale.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\types\\locale.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\types\\locale.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\types\\locale.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\types\\options.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\types\\options.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\types\\options.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\types\\options.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\utils\\dates.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\utils\\dates.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\utils\\dates.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\utils\\dates.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\utils\\dom.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\utils\\dom.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\utils\\dom.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\utils\\dom.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\utils\\formatting.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\utils\\formatting.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\utils\\formatting.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\utils\\formatting.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\utils\\polyfills.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\utils\\polyfills.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\esm\\utils\\polyfills.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\utils\\polyfills.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\flatpickr.css",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\flatpickr.css"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\flatpickr.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\flatpickr.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\flatpickr.min.css",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\flatpickr.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\flatpickr.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\flatpickr.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\ie.css",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\ie.css"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\ie.min.css",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\ie.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\ar-dz.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\ar-dz.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\ar-dz.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\ar-dz.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\ar.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\ar.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\ar.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\ar.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\at.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\at.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\at.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\at.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\az.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\az.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\az.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\az.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\be.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\be.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\be.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\be.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\bg.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\bg.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\bg.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\bg.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\bn.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\bn.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\bn.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\bn.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\bs.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\bs.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\bs.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\bs.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\cat.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\cat.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\cat.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\cat.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\ckb.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\ckb.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\ckb.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\ckb.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\cs.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\cs.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\cs.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\cs.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\cy.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\cy.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\cy.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\cy.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\da.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\da.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\da.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\da.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\de.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\de.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\de.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\de.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\default.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\default.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\default.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\default.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\eo.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\eo.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\eo.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\eo.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\es.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\es.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\es.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\es.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\et.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\et.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\et.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\et.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\fa.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\fa.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\fa.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\fa.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\fi.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\fi.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\fi.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\fi.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\fo.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\fo.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\fo.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\fo.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\fr.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\fr.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\fr.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\fr.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\ga.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\ga.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\ga.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\ga.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\gr.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\gr.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\gr.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\gr.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\he.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\he.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\he.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\he.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\hi.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\hi.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\hi.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\hi.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\hr.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\hr.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\hr.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\hr.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\hu.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\hu.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\hu.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\hu.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\hy.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\hy.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\hy.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\hy.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\id.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\id.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\id.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\id.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\is.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\is.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\is.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\is.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\it.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\it.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\it.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\it.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\ja.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\ja.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\ja.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\ja.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\ka.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\ka.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\ka.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\ka.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\km.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\km.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\km.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\km.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\ko.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\ko.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\ko.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\ko.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\kz.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\kz.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\kz.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\kz.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\lt.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\lt.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\lt.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\lt.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\lv.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\lv.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\lv.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\lv.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\mk.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\mk.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\mk.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\mk.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\mn.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\mn.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\mn.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\mn.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\ms.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\ms.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\ms.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\ms.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\my.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\my.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\my.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\my.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\nl.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\nl.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\nl.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\nl.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\nn.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\nn.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\nn.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\nn.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\no.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\no.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\no.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\no.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\pa.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\pa.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\pa.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\pa.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\pl.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\pl.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\pl.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\pl.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\pt.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\pt.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\pt.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\pt.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\ro.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\ro.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\ro.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\ro.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\ru.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\ru.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\ru.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\ru.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\si.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\si.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\si.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\si.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\sk.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\sk.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\sk.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\sk.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\sl.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\sl.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\sl.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\sl.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\sq.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\sq.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\sq.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\sq.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\sr-cyr.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\sr-cyr.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\sr-cyr.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\sr-cyr.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\sr.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\sr.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\sr.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\sr.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\sv.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\sv.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\sv.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\sv.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\th.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\th.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\th.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\th.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\tr.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\tr.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\tr.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\tr.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\uk.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\uk.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\uk.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\uk.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\uz.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\uz.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\uz.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\uz.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\uz_latn.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\uz_latn.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\uz_latn.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\uz_latn.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\vn.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\vn.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\vn.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\vn.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\zh-tw.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\zh-tw.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\zh-tw.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\zh-tw.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\zh.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\zh.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\l10n\\zh.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\zh.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\plugins\\confirmdate\\confirmdate.css",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\plugins\\confirmdate\\confirmdate.css"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\plugins\\confirmdate\\confirmdate.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\plugins\\confirmdate\\confirmdate.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\plugins\\confirmdate\\confirmdate.min.css",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\plugins\\confirmdate\\confirmdate.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\plugins\\confirmdate\\confirmdate.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\plugins\\confirmdate\\confirmdate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\plugins\\labelplugin\\labelplugin.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\plugins\\labelplugin\\labelplugin.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\plugins\\labelplugin\\labelplugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\plugins\\labelplugin\\labelplugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\plugins\\minmaxtimeplugin.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\plugins\\minmaxtimeplugin.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\plugins\\minmaxtimeplugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\plugins\\minmaxtimeplugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\plugins\\momentplugin.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\plugins\\momentplugin.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\plugins\\momentplugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\plugins\\momentplugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\plugins\\monthselect\\style.css",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\plugins\\monthselect\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\plugins\\monthselect\\style.min.css",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\plugins\\monthselect\\style.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\plugins\\rangeplugin.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\plugins\\rangeplugin.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\plugins\\rangeplugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\plugins\\rangeplugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\plugins\\scrollplugin.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\plugins\\scrollplugin.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\plugins\\scrollplugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\plugins\\scrollplugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\plugins\\weekselect\\weekselect.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\plugins\\weekselect\\weekselect.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\plugins\\weekselect\\weekselect.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\plugins\\weekselect\\weekselect.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\themes\\airbnb.css",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\themes\\airbnb.css"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\themes\\airbnb.min.css",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\themes\\airbnb.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\themes\\confetti.css",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\themes\\confetti.css"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\themes\\confetti.min.css",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\themes\\confetti.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\themes\\dark.css",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\themes\\dark.css"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\themes\\dark.min.css",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\themes\\dark.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\themes\\light.css",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\themes\\light.css"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\themes\\light.min.css",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\themes\\light.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\themes\\material_blue.css",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\themes\\material_blue.css"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\themes\\material_blue.min.css",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\themes\\material_blue.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\themes\\material_green.css",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\themes\\material_green.css"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\themes\\material_green.min.css",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\themes\\material_green.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\themes\\material_orange.css",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\themes\\material_orange.css"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\themes\\material_orange.min.css",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\themes\\material_orange.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\themes\\material_red.css",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\themes\\material_red.css"
+    },
+    {
+      "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\flatpickr\\themes\\material_red.min.css",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\themes\\material_red.min.css"
     },
     {
       "Id": "C:\\Users\\Zapata\\Documents\\.NET Projects\\Git\\OrderItemWeb\\OrderItemWeb\\wwwroot\\lib\\font-awesome\\css\\all.css",

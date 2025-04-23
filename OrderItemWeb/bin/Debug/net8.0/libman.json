@@ -5,6 +5,10 @@
     {
       "library": "font-awesome@5.15.4",
       "destination": "wwwroot/font-awesome/"
+    },
+    {
+      "library": "flatpickr@4.6.13",
+      "destination": "wwwroot/lib/flatpickr/"
     }
   ]
 }

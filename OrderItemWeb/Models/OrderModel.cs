@@ -1,4 +1,5 @@
-﻿using System.Net;
+﻿using System.Drawing.Printing;
+using System.Net;
 using Newtonsoft.Json;
 using OrderItemViewModel;
 
@@ -40,13 +41,71 @@ namespace OrderItemWeb.Models
                 else
                 {
                     apiResponse.StatusCode = apiResponseMsg.StatusCode;
-                    apiResponse.Message = $"{apiResponse.StatusCode} - From OrderModel: Can't reach Order API";
+                    apiResponse.Message = $"{apiResponse.StatusCode} - From OrderModel.GetOrders: Can't reach Order API";
                 }
             }
             catch (Exception ex)
             {
                 apiResponse.StatusCode = HttpStatusCode.InternalServerError;
-                apiResponse.Message = $"{HttpStatusCode.InternalServerError} - From OrderModel: Error when trying to reach Order API, {ex.Message}";
+                apiResponse.Message = $"{HttpStatusCode.InternalServerError} - From OrderModel.GetOrders: Error when trying to reach Order API, {ex.Message}";
+            }
+
+            return apiResponse;
+        }
+
+        public async Task<VMResponse<VMSoOrder>> GetOrderWithItems(long orderId, int page, int pageSize)
+        {
+            VMResponse<VMSoOrder> apiResponse = new VMResponse<VMSoOrder>();
+
+            try
+            {
+                HttpResponseMessage apiResponseMsg =
+                    await httpClient.GetAsync($"{apiUrl}Order/GetOrderWithItems?orderId={orderId}&page={page}&itemsperpage={pageSize}");
+                string apiMsgContent = apiResponseMsg.Content.ReadAsStringAsync().Result;
+
+                if (apiMsgContent != string.Empty)
+                {
+                    apiResponse = JsonConvert.DeserializeObject<VMResponse<VMSoOrder>>(apiMsgContent)!;
+                }
+                else
+                {
+                    apiResponse.StatusCode = apiResponseMsg.StatusCode;
+                    apiResponse.Message = $"{apiResponse.StatusCode} - From OrderModel.GetOrderWithItems: Can't reach Order API";
+                }
+            }
+            catch(Exception ex)
+            {
+                apiResponse.StatusCode = HttpStatusCode.InternalServerError;
+                apiResponse.Message = $"{HttpStatusCode.InternalServerError} - From OrderModel.GetOrderWithItems: Error when trying to reach Order API, {ex.Message}";
+            }
+
+            return apiResponse;
+        }
+
+        public async Task<VMResponse<VMSoOrder>> DeleteOrder(long orderId)
+        {
+            VMResponse<VMSoOrder> apiResponse = new VMResponse<VMSoOrder>();
+
+            try
+            {
+                HttpResponseMessage apiResponseMsg =
+                    await httpClient.DeleteAsync($"{apiUrl}Order/DeleteOrder?orderId={orderId}");
+                string apiMsgContent = apiResponseMsg.Content.ReadAsStringAsync().Result;
+
+                if (apiMsgContent != string.Empty)
+                {
+                    apiResponse = JsonConvert.DeserializeObject<VMResponse<VMSoOrder>>(apiMsgContent)!;
+                }
+                else
+                {
+                    apiResponse.StatusCode = apiResponseMsg.StatusCode;
+                    apiResponse.Message = $"{apiResponse.StatusCode} - From OrderModel.DeleteOrder: Can't reach Order API";
+                }
+            }
+            catch (Exception ex)
+            {
+                apiResponse.StatusCode = HttpStatusCode.InternalServerError;
+                apiResponse.Message = $"{HttpStatusCode.InternalServerError} - From OrderModel.DeleteOrder: Error when trying to reach Order API, {ex.Message}";
             }
 
             return apiResponse;
