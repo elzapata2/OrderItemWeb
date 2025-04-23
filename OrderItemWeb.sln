@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderItemModel", "OrderItem
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderItemViewModel", "OrderItemViewModel\OrderItemViewModel.csproj", "{8ABBA913-77EE-4465-B1AF-9DF302BFA93F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderItemAPI", "OrderItemAPI\OrderItemAPI.csproj", "{81385B3B-FF7F-4247-8063-D3A04C5C5EF4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{8ABBA913-77EE-4465-B1AF-9DF302BFA93F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8ABBA913-77EE-4465-B1AF-9DF302BFA93F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8ABBA913-77EE-4465-B1AF-9DF302BFA93F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81385B3B-FF7F-4247-8063-D3A04C5C5EF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81385B3B-FF7F-4247-8063-D3A04C5C5EF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81385B3B-FF7F-4247-8063-D3A04C5C5EF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81385B3B-FF7F-4247-8063-D3A04C5C5EF4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
