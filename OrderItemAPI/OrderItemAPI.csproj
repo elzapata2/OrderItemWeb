@@ -7,10 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.15" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.15">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\OrderItemDataAccess\OrderItemDataAccess.csproj" />
+    <ProjectReference Include="..\OrderItemModel\OrderItemModel.csproj" />
     <ProjectReference Include="..\OrderItemViewModel\OrderItemViewModel.csproj" />
   </ItemGroup>
 

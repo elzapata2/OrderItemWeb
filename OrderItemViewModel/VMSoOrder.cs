@@ -16,6 +16,10 @@ namespace OrderItemViewModel
 
         public int ComCustomerId { get; set; }
 
+        public string? ComCustomerName { get; set; }
+
         public string Address { get; set; } = null!;
+
+        public List<VMSoItem>? Items { get; set; }
     }
 }

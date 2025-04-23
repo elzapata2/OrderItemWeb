@@ -1,0 +1,12 @@
+C:\Users\Zapata\Documents\.NET Projects\Git\OrderItemWeb\OrderItemViewModel\bin\Debug\net8.0\OrderItemViewModel.deps.json
+C:\Users\Zapata\Documents\.NET Projects\Git\OrderItemWeb\OrderItemViewModel\bin\Debug\net8.0\OrderItemViewModel.dll
+C:\Users\Zapata\Documents\.NET Projects\Git\OrderItemWeb\OrderItemViewModel\bin\Debug\net8.0\OrderItemViewModel.pdb
+C:\Users\Zapata\Documents\.NET Projects\Git\OrderItemWeb\OrderItemViewModel\obj\Debug\net8.0\OrderItemViewModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Zapata\Documents\.NET Projects\Git\OrderItemWeb\OrderItemViewModel\obj\Debug\net8.0\OrderItemViewModel.AssemblyInfoInputs.cache
+C:\Users\Zapata\Documents\.NET Projects\Git\OrderItemWeb\OrderItemViewModel\obj\Debug\net8.0\OrderItemViewModel.AssemblyInfo.cs
+C:\Users\Zapata\Documents\.NET Projects\Git\OrderItemWeb\OrderItemViewModel\obj\Debug\net8.0\OrderItemViewModel.csproj.CoreCompileInputs.cache
+C:\Users\Zapata\Documents\.NET Projects\Git\OrderItemWeb\OrderItemViewModel\obj\Debug\net8.0\OrderItemViewModel.sourcelink.json
+C:\Users\Zapata\Documents\.NET Projects\Git\OrderItemWeb\OrderItemViewModel\obj\Debug\net8.0\OrderItemViewModel.dll
+C:\Users\Zapata\Documents\.NET Projects\Git\OrderItemWeb\OrderItemViewModel\obj\Debug\net8.0\refint\OrderItemViewModel.dll
+C:\Users\Zapata\Documents\.NET Projects\Git\OrderItemWeb\OrderItemViewModel\obj\Debug\net8.0\OrderItemViewModel.pdb
+C:\Users\Zapata\Documents\.NET Projects\Git\OrderItemWeb\OrderItemViewModel\obj\Debug\net8.0\ref\OrderItemViewModel.dll

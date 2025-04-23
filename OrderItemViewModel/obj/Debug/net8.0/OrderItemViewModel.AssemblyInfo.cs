@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OrderItemViewModel")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+853648537b5afed762f8f39fc028add2d5f6be14")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5d7a8a62c31452fd029c14f719df72a9360d36ad")]
 [assembly: System.Reflection.AssemblyProductAttribute("OrderItemViewModel")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OrderItemViewModel")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
