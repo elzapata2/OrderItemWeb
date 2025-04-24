@@ -3,6 +3,7 @@
 *@
 @model VMSoOrder
 @{
+    long numTotal = 0;
 }
 
 <div class="text-center" style="background-color: gray;">
@@ -13,8 +14,8 @@
     <div class="row m-5">
         <div class="col-5">
             <div class="input-group mb-3">
-                <label class="input-group-text col-3 text-light">Keyword</label>
-                <input id="keyword" type="text" class="form-control col-9" name="Keyword" />
+                <label class="input-group-text col-3 text-light">Sales Order Number</label>
+                <input id="keyword" type="text" class="form-control col-9" name="OrderNo" value="@ViewBag.OrderNo" />
             </div>
         </div>
         <div class="col-2">
@@ -23,15 +24,30 @@
             <div class="input-group mb-3">
                 <label class="input-group-text col-3 text-light">Customer</label>
                 @* <input id="customer" type="text" class="form-control col-9" name="Customer" /> *@
-                <select class="form-select"></select>
+                <select class="form-select">
+                    @if (ViewBag.Customers != null && ViewBag.Customers.Count > 0)
+                    {
+                        foreach(VMComCustomer customer in ViewBag.Customers)
+                        {
+                            if (customer.ComCustomerId == ViewBag.CustomerId) 
+                            {
+                                <option value="@customer.ComCustomerId" selected>@customer.CustomerName</option>
+                            }
+                            else 
+                            {
+                                <option value="@customer.ComCustomerId">@customer.CustomerName</option>
+                            }                            
+                        }
+                    }
+                </select>
             </div>
         </div>
     </div>
     <div class="row m-5">
-        <div class="col-5">
+        <div class="col-5 flatpickr">
             <div class="input-group mb-3">
                 <label class="input-group-text col-3 text-light">Order Date</label>
-                <input id="orderDate" type="text" class="form-control col-9" name="Date" />
+                <input id="orderDate" type="text" class="form-control col-9" name="Date" value="@ViewBag.OrderDate" />
             </div>
         </div>
         <div class="col-2">
@@ -39,7 +55,7 @@
         <div class="col-5">
             <div class="input-group mb-3">
                 <label class="input-group-text col-3 text-light">Address</label>
-                <textarea class="form-control" id="address" rows="3" name="Address"></textarea>
+                <textarea class="form-control" id="address" rows="3" name="Address">@ViewBag.Address</textarea>
             </div>
         </div>
     </div>
@@ -91,16 +107,18 @@
                                 </button>
                             </div>
                         </td>
-                        <td><div contenteditable>@item.ItemName</div></td>
-                        <td><div contenteditable>@item.Quantity</div></td>
-                        <td><div contenteditable>@item.Price</div></td>
-                        <td><div contenteditable>@((item.Price * item.Quantity).ToString("C"))</div></td>
+                        <td><div>@item.ItemName</div></td>
+                        <td><div>@item.Quantity</div></td>
+                        <td><div>@item.Price</div></td>
+                        <td><div>@((item.Price * item.Quantity).ToString("C"))</div></td>
                     </tr>
 
                     num += 1;
                     totalItem += item.Quantity;
                     totalAmount += item.Price * item.Quantity;
                 }
+
+                numTotal = num;
 
                 <tr>
                     <td colspan="3"></td>
@@ -112,3 +130,13 @@
         </tbody>
     </table>
 </div>
+
+<script>
+    $(document).ready(() => {
+        $("#orderDate").flatpickr({
+            dateFormat: "d/m/Y"
+        });
+
+        $("#")
+    })
+</script>

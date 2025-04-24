@@ -26,11 +26,11 @@ namespace OrderItemDataAccess
 
             try
             {
-                List<VMSoOrder>? data = (
+                var query = (
                     from ord in db.SoOrders
                     join cust in db.ComCustomers on ord.ComCustomerId equals cust.ComCustomerId
                     where
-                    (ord.OrderNo.Contains((string.IsNullOrEmpty(keyword) ? "" : keyword)) || cust.CustomerName!.Contains((string.IsNullOrEmpty(keyword) ? "" : keyword))) && 
+                    (ord.OrderNo.Contains((string.IsNullOrEmpty(keyword) ? "" : keyword)) || cust.CustomerName!.Contains((string.IsNullOrEmpty(keyword) ? "" : keyword))) &&
                     (searchDate == null || ord.OrderDate == searchDate)
                     select new VMSoOrder
                     {
@@ -52,14 +52,46 @@ namespace OrderItemDataAccess
                         //        Price = item.Price
                         //    }
                         //    ).ToList()
-                    }
-                    ).Skip((page - 1) * itemsPerPage).Take(itemsPerPage).ToList();
+                    });
+
+                long totalCount = query.Count();
+                List<VMSoOrder>? data = query.Skip((page - 1) * itemsPerPage).Take(itemsPerPage).OrderByDescending(d => d.OrderDate).ToList();
+
+                //List<VMSoOrder>? data = (
+                //    from ord in db.SoOrders
+                //    join cust in db.ComCustomers on ord.ComCustomerId equals cust.ComCustomerId
+                //    where
+                //    (ord.OrderNo.Contains((string.IsNullOrEmpty(keyword) ? "" : keyword)) || cust.CustomerName!.Contains((string.IsNullOrEmpty(keyword) ? "" : keyword))) && 
+                //    (searchDate == null || ord.OrderDate == searchDate)
+                //    select new VMSoOrder
+                //    {
+                //        SoOrderId = ord.SoOrderId,
+                //        OrderNo = ord.OrderNo,
+                //        OrderDate = ord.OrderDate,
+                //        ComCustomerId = ord.ComCustomerId,
+                //        ComCustomerName = cust.CustomerName,
+                //        Address = ord.Address,
+                //        //Items = (
+                //        //    from item in db.SoItems
+                //        //    where item.SoOrderId == ord.SoOrderId
+                //        //    select new VMSoItem
+                //        //    {
+                //        //        SoItemId = item.SoItemId,
+                //        //        SoOrderId = item.SoOrderId,
+                //        //        ItemName = item.ItemName,
+                //        //        Quantity = item.Quantity,
+                //        //        Price = item.Price
+                //        //    }
+                //        //    ).ToList()
+                //    }
+                //    ).Skip((page - 1) * itemsPerPage).Take(itemsPerPage).ToList();
 
                 if (data != null && data.Count > 0)
                 {
                     response.StatusCode = HttpStatusCode.OK;
-                    response.Message = $"{HttpStatusCode.OK} - Successfully fetched {data.Count} Order Data!";
+                    response.Message = $"{HttpStatusCode.OK} - Successfully fetched {data.Count} of {totalCount} Order Data!";
                     response.Data = data;
+                    response.TotalData = totalCount;
                 }
                 else
                 {

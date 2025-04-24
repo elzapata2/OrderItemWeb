@@ -47,13 +47,14 @@
             </tr>
         </thead>
         <tbody>
-            
-                @if (Model.Count > 0)
+
+            @if (Model.Count > 0)
+            {
+                long num = 1;
+                foreach(VMSoOrder order in Model)
                 {
-                    foreach(VMSoOrder order in Model)
-                    {
                     <tr>
-                        <td>@order.SoOrderId</td>
+                        <td>@num</td>
                         <td>
                             <div class="btn-group" role="group">
                                 <button id="btnEditOrder" data-id="@order.SoOrderId" class="btn btn-outline-info" title="Edit...">
@@ -70,17 +71,171 @@
                         <td>@order.OrderDate.ToString("dd/M/yyyy")</td>
                         <td>@order.ComCustomerName</td>
                     </tr>
-                    }
-                }               
+                    num++;
+                }
+            }               
            
         </tbody>
     </table>
 </div>
 
+<div class="row">
+    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+        Page @ViewBag.Page of @ViewBag.TotalPages
+    </div>
+    <div class="col-xs-5 col-sm-5 col-md-5 col-lg-7 d-flex justify-content-center">
+        @if (ViewBag.Page == 1)
+        {
+            <nav aria-label="Page Navigation Example">
+                <ul class="pagination pagination-primary">
+                    <li class="page-item disabled">
+                        <a class="page-link"><i class="fas fa-backward"></i></a>
+                    </li>
+                    <li class="page-item active"> <a class="page-link">1</a></li>
+                    @for (int i = 1; i < @ViewBag.TotalPages; i++)
+                    {
+                        @if (i == 3)
+                        {
+                            break;
+                        }
+                        <li class="page-item">
+                            <a class="page-link" asp-controller="Order" asp-action="Index"
+                               asp-route-keyword="@ViewBag.Keyword"
+                               asp-route-searchDate="@ViewBag.SearchDate"
+                               asp-route-page="@(ViewBag.Page + i)"
+                               asp-route-pageSize="@ViewBag.PageSize">@(ViewBag.Page + i)</a>
+                        </li>
+
+                    }
+                    @if (ViewBag.TotalPages != 1)
+                    {
+                        <li class="page-item">
+                            <a class="page-link" asp-controller="Order" asp-action="Index"
+                               asp-route-keyword="@ViewBag.Keyword"
+                               asp-route-searchDate="@ViewBag.SearchDate"
+                               asp-route-page="@(ViewBag.Page + 1)"
+                               asp-route-pageSize="@ViewBag.PageSize"><i class="fas fa-forward"></i></a>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="page-item disabled">
+                            <a class="page-link"><i class="fas fa-forward"></i></a>
+                        </li>
+                    }
+
+                </ul>
+            </nav>
+        }
+        else if (ViewBag.Page == ViewBag.TotalPages)
+        {
+            <nav aria-label="...">
+                <ul class="pagination pagination-primary">
+                    <li class="page-item">
+                        <a class="page-link" asp-controller="Order" asp-action="Index"
+                           asp-route-keyword="@ViewBag.Keyword"
+                           asp-route-searchDate="@ViewBag.SearchDate"
+                           asp-route-page="@(ViewBag.Page - 1)"
+                           asp-route-pageSize="@ViewBag.PageSize"><i class="fas fa-backward"></i></a>
+                    </li>
+                    @for (int i = 2; i > 0; i--)
+                    {
+                        @if (ViewBag.Page - i <= 0)
+                        {
+                            continue;
+                        }
+                        <li class="page-item">
+                            <a class="page-link" asp-controller="Order" asp-action="Index"
+                               asp-route-keyword="@ViewBag.Keyword"
+                               asp-route-searchDate="@ViewBag.SearchDate"
+                               asp-route-page="@(ViewBag.Page - i)"
+                               asp-route-pageSize="@ViewBag.PageSize">@(ViewBag.Page - i)</a>
+                        </li>
+                    }
+                    <li class="page-item active"><a class="page-link">@ViewBag.Page</a></li>
+                    <li class="page-item disabled">
+                        <a class="page-link"><i class="fas fa-forward"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        }
+        else
+        {
+            <nav aria-label="...">
+                <ul class="pagination pagination-primary">
+                    <li class="page-item">
+                        <a class="page-link" asp-controller="Order" asp-action="Index"
+                           asp-route-keyword="@ViewBag.Keyword"
+                           asp-route-searchDate="@ViewBag.SearchDate"
+                           asp-route-page="@(ViewBag.Page - 1)"
+                           asp-route-pageSize="@ViewBag.PageSize"><i class="fas fa-backward"></i></a>
+                    </li>
+                    @* <li class="page-item">
+                        <a class="page-link" asp-controller="Barcode" asp-action="Index"
+                           asp-route-currPageSize="@ViewBag.PageSize"
+                           asp-route-pageNumber="@(Model.PageIndex - 1)"
+                           asp-route-typeNumber="@ViewBag.Status"
+                           asp-route-dateFrom="@ViewBag.DateFrom"
+                           asp-route-dateTo="@ViewBag.DateTo"
+                           asp-route-ascDesc="@ViewBag.AscDesc"
+                           asp-route-sortedBy="@ViewBag.SortBy"><i class="fas fa-backward"></i></a>
+                    </li> *@
+                    <li class="page-item">
+                        <a class="page-link" asp-controller="Order" asp-action="Index"
+                           asp-route-keyword="@ViewBag.Keyword"
+                           asp-route-searchDate="@ViewBag.SearchDate"
+                           asp-route-page="@(ViewBag.Page - 1)"
+                           asp-route-pageSize="@ViewBag.PageSize">@(ViewBag.Page - 1)</a>
+                    </li>
+                    <li class="page-item active"><a class="page-link">@ViewBag.Page</a></li>
+                    <li class="page-item">
+                        <a class="page-link" asp-controller="Order" asp-action="Index"
+                           asp-route-keyword="@ViewBag.Keyword"
+                           asp-route-searchDate="@ViewBag.SearchDate"
+                           asp-route-page="@(ViewBag.Page + 1)"
+                           asp-route-pageSize="@ViewBag.PageSize">@(ViewBag.Page + 1)</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" asp-controller="Order" asp-action="Index"
+                           asp-route-keyword="@ViewBag.Keyword"
+                           asp-route-searchDate="@ViewBag.SearchDate"
+                           asp-route-page="@(ViewBag.Page + 1)"
+                           asp-route-pageSize="@ViewBag.PageSize"><i class="fas fa-forward"></i></a>
+                    </li>
+                    @* <li class="page-item">
+                        <a class="page-link" asp-controller="Barcode" asp-action="Index"
+                           asp-route-currPageSize="@ViewBag.PageSize"
+                           asp-route-pageNumber="@(Model.PageIndex + 1)"
+                           asp-route-typeNumber="@ViewBag.Status"
+                           asp-route-dateFrom="@ViewBag.DateFrom"
+                           asp-route-dateTo="@ViewBag.DateTo"
+                           asp-route-ascDesc="@ViewBag.AscDesc"
+                           asp-route-sortedBy="@ViewBag.SortBy"><i class="fas fa-forward"></i></a>
+                    </li> *@
+                </ul>
+            </nav>
+        }
+    </div>
+    <div class="col-xs-5 col-sm-5 col-md-5 col-lg-3 d-flex justify-content-end">
+        <form id="frmPageSize" method="get"
+              asp-controller="Order" asp-action="Index">
+            <div class="input-group">
+                <span class="input-group-text">Show</span>
+                <input id="pageSize" class="form-control" type="number" id="pageSize" name="pageSize" min="1" max="100" value="@ViewBag.PageSize" />
+                <span class="input-group-text"> Entries</span>
+            </div>
+            <input name="page" type="hidden" value="1" />
+            <input name="keyword" type="hidden" value="@ViewBag.Keyword" />
+            <input name="searchDate" type="hidden" value="@ViewBag.SearchDate" />
+        </form>
+
+    </div>
+</div>
+
 <script>
     $(document).ready(() => {
         $("#orderDate").flatpickr({
-            dateFormat: "d/m/y"
+            dateFormat: "d/m/Y"
         });
 
         $("#btnAddOrder").click(function (e) {
@@ -90,7 +245,8 @@
         $("#btnSearch").click(function (e) {
             var searchDate = $("#orderDate").val();
             var keyword = $("#keyword").val();
-            location.href = `/Order/Index?keyword=${keyword}&searchDate=${searchDate}`;
+            var pageSize = $("#pageSize").val();
+            location.href = `/Order/Index?keyword=${keyword}&searchDate=${searchDate}&page=1&pageSize=${pageSize}`;
         });
 
         $(".btn-outline-info").click(function (e) {

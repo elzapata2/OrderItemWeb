@@ -5,6 +5,71 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/Customer/GetAllCustomers": {
+      "get": {
+        "tags": [
+          "Customer"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Item/GetTemporaryItemsByOrderId": {
+      "get": {
+        "tags": [
+          "Item"
+        ],
+        "parameters": [
+          {
+            "name": "orderId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Item/AddTemporaryItem": {
+      "post": {
+        "tags": [
+          "Item"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/VMSoItem"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/VMSoItem"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/VMSoItem"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Order/GetOrders": {
       "get": {
         "tags": [

@@ -1,5 +1,47 @@
 [
   {
+    "ContainingType": "OrderItemAPI.Controllers.CustomerController",
+    "Method": "GetAllCustomers",
+    "RelativePath": "api/Customer/GetAllCustomers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OrderItemAPI.Controllers.ItemController",
+    "Method": "AddTemporaryItem",
+    "RelativePath": "api/Item/AddTemporaryItem",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "data",
+        "Type": "OrderItemViewModel.VMSoItem",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OrderItemAPI.Controllers.ItemController",
+    "Method": "GetTemporaryItemsByOrderId",
+    "RelativePath": "api/Item/GetTemporaryItemsByOrderId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderId",
+        "Type": "System.Int64",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "OrderItemAPI.Controllers.OrderController",
     "Method": "AddOrder",
     "RelativePath": "api/Order/AddOrder",

@@ -8,6 +8,7 @@ namespace OrderItemWeb.Controllers
     public class OrderController : Controller
     {
         private OrderModel order;
+        private CustomerModel cust;
 
         private int defaultPage = 1;
         private int defaultPageSize = 4;
@@ -15,21 +16,41 @@ namespace OrderItemWeb.Controllers
         public OrderController(IConfiguration _config)
         {
             order = new OrderModel(_config);
+            cust = new CustomerModel(_config);
         }
 
         public async Task<IActionResult> Index(string? keyword, string? searchDate, int? page, int? pageSize)
         {
             VMResponse<List<VMSoOrder>?> response = new VMResponse<List<VMSoOrder>?>();
 
+            page = (page == null) ? defaultPage : page;
+            pageSize = (pageSize == null) ? defaultPageSize : pageSize;
+
             try
             {
-                response = await order.GetOrders(keyword, searchDate, (page == null) ? defaultPage : (int)page, (pageSize == null) ? defaultPageSize : (int)pageSize);
+                response = await order.GetOrders(keyword, searchDate, (int)page, (int)pageSize);
             }
             catch (Exception ex)
             {
                 response.StatusCode = HttpStatusCode.InternalServerError;
                 response.Message = $"{HttpStatusCode.InternalServerError} - From OrderController.Index: {ex.Message}";
                 response.Data = new List<VMSoOrder>();
+            }
+
+            ViewBag.Keyword = keyword; 
+            ViewBag.SearchDate = searchDate;
+            ViewBag.Page = page; 
+            ViewBag.PageSize = pageSize;
+
+            if (response.StatusCode == HttpStatusCode.OK)
+            {
+                ViewBag.TotalOrders = response.TotalData;
+                ViewBag.TotalPages = (ViewBag.TotalOrders % ViewBag.PageSize != 0) ? ViewBag.TotalOrders / ViewBag.PageSize + 1 : ViewBag.TotalOrders / ViewBag.PageSize;
+            }
+            else
+            {
+                ViewBag.TotalOrders = 0;
+                ViewBag.TotalPages = 1;
             }
 
             return View(response.Data);
@@ -42,15 +63,43 @@ namespace OrderItemWeb.Controllers
             page = (page == null) ? defaultPage : page;
             pageSize = (pageSize == null) ? defaultPageSize : pageSize;
 
-            if (orderId == null)
-            {
-                response.Data = new VMSoOrder();
-                return View(response.Data);
-            }
+            ViewBag.Page = page;
+            ViewBag.PageSize = pageSize;
+            ViewBag.Keyword = null;
+            ViewBag.SearchDate = null;
+            ViewBag.CustomerId = 1;
+            ViewBag.Address = null;
 
             try
             {
+                VMResponse<List<VMComCustomer>?> customers = await cust.GetAllCustomers();
+
+                if (customers.StatusCode == HttpStatusCode.OK)
+                {
+                    ViewBag.Customers = customers.Data;
+                }
+                else if (customers.StatusCode == HttpStatusCode.NoContent)
+                {
+                    ViewBag.Customers = null;
+                }
+                else
+                {
+                    throw new Exception(customers.Message);
+                }
+
+                if (orderId == null)
+                {
+                    response.Data = new VMSoOrder();
+                    return View(response.Data);
+                }
+
+           
                 response = await order.GetOrderWithItems((long)orderId, (int)page, (int)pageSize);
+
+                ViewBag.OrderNo = response.Data!.OrderNo;
+                ViewBag.OrderDate = response.Data.OrderDate.Date.ToShortDateString();
+                ViewBag.CustomerId = response.Data.ComCustomerId;
+                ViewBag.Address = response.Data.Address;
             }
             catch (Exception ex)
             {
@@ -58,6 +107,8 @@ namespace OrderItemWeb.Controllers
                 response.Message = $"{HttpStatusCode.InternalServerError} - From OrderController.CreateEdit: {ex.Message}";
                 response.Data = new VMSoOrder();
             }
+
+            ViewBag.OrderId = orderId;
 
             return View(response.Data);
         }

@@ -12,12 +12,14 @@ namespace OrderItemViewModel
         public HttpStatusCode StatusCode { get; set; }
         public string? Message { get; set; }
         public T? Data { get; set; }
+        public long? TotalData { get; set; }
 
         public VMResponse()
         {
             StatusCode = HttpStatusCode.InternalServerError;
             Message = string.Empty;
             Data = default(T);
+            TotalData = 0;
         }
     }
 }
