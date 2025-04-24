@@ -22,15 +22,15 @@
         toast: true,
         position: 'top-end',
         showConfirmButton: false,
-        timer: 2000,
         timerProgressBar: true,
         showCloseButton: true
     })
 
-    function toastAlert(msg, status) {
+    function toastAlert(msg, status, time) {
         Toast.fire({
             icon: status,
-            title: msg
+            title: msg,
+            timer: time
         })
     }
 

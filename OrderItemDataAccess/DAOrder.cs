@@ -8,6 +8,7 @@ using OrderItemViewModel;
 using Microsoft.EntityFrameworkCore.Storage;
 using OrderItemModel;
 using static System.Runtime.InteropServices.JavaScript.JSType;
+using System.Security.Cryptography;
 
 namespace OrderItemDataAccess
 {
@@ -115,6 +116,19 @@ namespace OrderItemDataAccess
 
             try
             {
+                var queryItems = (
+                    from item in db.SoItems
+                    where item.SoOrderId == orderId
+                    select new VMSoItem
+                    {
+                        SoItemId = item.SoItemId,
+                        SoOrderId = item.SoOrderId,
+                        ItemName = item.ItemName,
+                        Quantity = item.Quantity,
+                        Price = item.Price
+                    }
+                    );
+
                 VMSoOrder? data = (
                     from ord in db.SoOrders
                     join cust in db.ComCustomers on ord.ComCustomerId equals cust.ComCustomerId
@@ -127,26 +141,26 @@ namespace OrderItemDataAccess
                         ComCustomerId = ord.ComCustomerId,
                         ComCustomerName = cust.CustomerName,
                         Address = ord.Address,
-                        Items = (
-                            from item in db.SoItems
-                            where item.SoOrderId == ord.SoOrderId
-                            select new VMSoItem
-                            {
-                                SoItemId = item.SoItemId,
-                                SoOrderId = item.SoOrderId,
-                                ItemName = item.ItemName,
-                                Quantity = item.Quantity,
-                                Price = item.Price
-                            }
-                            ).Skip((page - 1) * itemsPerPage).Take(itemsPerPage).ToList()
+                        Items = queryItems.Skip((page - 1) * itemsPerPage).Take(itemsPerPage).ToList()
+                        //).ToList()
                     }
                     ).FirstOrDefault();
 
                 if (data != null)
                 {
+                    //VMSoItem? orderItem = (
+                        
+                    //    )
+
                     response.StatusCode = HttpStatusCode.OK;
                     response.Message = $"{HttpStatusCode.OK} - Successfully fetched the data";
                     response.Data = data;
+                    response.TotalData = queryItems.Count();
+                    foreach (VMSoItem dataItem in queryItems.ToList())
+                    {
+                        response.TotalItem += dataItem.Quantity;
+                        response.TotalAmount += dataItem.Quantity * dataItem.Price;
+                    }
                 }
                 else
                 {

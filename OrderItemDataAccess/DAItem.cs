@@ -87,9 +87,10 @@ namespace OrderItemDataAccess
                         response.Message = $"{HttpStatusCode.BadRequest} - No order data was Found!";
                     }
 
-                    SoItem newData = new SoItem
+                    ViewSoItem newData = new ViewSoItem
                     {
-                        SoOrderId = data.SoOrderId * -1,
+                        SoItemId = 0,
+                        SoOrderId = data.SoOrderId,
                         ItemName = data.ItemName,
                         Quantity = data.Quantity,
                         Price = data.Price
@@ -122,7 +123,62 @@ namespace OrderItemDataAccess
             {
                 try
                 {
+                    VMSoOrder? order = (
+                       from ord in db.SoOrders
+                       where ord.SoOrderId == data.SoOrderId
+                       select new VMSoOrder
+                       {
+                           SoOrderId = ord.SoOrderId,
+                           OrderNo = ord.OrderNo,
+                           OrderDate = ord.OrderDate,
+                           ComCustomerId = ord.ComCustomerId,
+                           Address = ord.Address
+                       }
+                       ).FirstOrDefault();
 
+                    if (order == null)
+                    {
+                        response.StatusCode = HttpStatusCode.BadRequest;
+                        response.Message = $"{HttpStatusCode.BadRequest} - No order data was Found!";
+                        return response;
+                    }
+
+                    VMSoItem? existingData = (
+                        from item in db.SoItems
+                        where item.SoItemId == data.SoItemId
+                        select new VMSoItem
+                        {
+                            SoItemId = item.SoItemId,
+                            SoOrderId = item.SoOrderId,
+                            ItemName = item.ItemName,
+                            Quantity = item.Quantity,
+                            Price = item.Price
+                        }
+                        ).FirstOrDefault();
+
+                    if (existingData == null)
+                    {
+                        response.StatusCode = HttpStatusCode.BadRequest;
+                        response.Message = $"{HttpStatusCode.BadRequest} - No item data was Found!";
+                        return response;
+                    }
+
+                    ViewSoItem updatedData = new ViewSoItem
+                    {
+                        SoItemId = data.SoItemId,
+                        SoOrderId = data.SoOrderId,
+                        ItemName = data.ItemName,
+                        Quantity = data.Quantity,
+                        Price = data.Price
+                    };
+
+                    db.Update(updatedData);
+                    db.SaveChanges();
+
+                    dbTran.Commit();
+
+                    response.StatusCode = HttpStatusCode.Created;
+                    response.Message = $"{HttpStatusCode.Created} - Item for Order Id {order!.SoOrderId} successfully updated temporarily!";
                 }
                 catch (Exception ex)
                 {

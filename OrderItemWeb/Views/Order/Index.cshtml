@@ -235,11 +235,11 @@
 <script>
     $(document).ready(() => {
         $("#orderDate").flatpickr({
-            dateFormat: "d/m/Y"
+            dateFormat: "Y-m-d"
         });
 
         $("#btnAddOrder").click(function (e) {
-            location.href = "/Order/CreateEdit";
+            location.href = "/Order/Create";
         });
 
         $("#btnSearch").click(function (e) {

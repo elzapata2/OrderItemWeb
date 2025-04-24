@@ -1,11 +1,7 @@
 ﻿@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
-@model VMSoOrder
 @{
-    long numTotal = 0;
-    long totalOrderItem = ViewBag.TotalItem;
-    double totalOrderAmount = ViewBag.TotalAmount;
 }
 
 <div class="text-center" style="background-color: gray;">
@@ -18,7 +14,7 @@
             <div class="col-5">
                 <div class="input-group mb-3">
                     <label class="input-group-text col-3 text-light">Sales Order Number</label>
-                    <input id="keyword" type="text" class="form-control col-9" name="OrderNo" value="@ViewBag.OrderNo" required />
+                    <input id="keyword" type="text" class="form-control col-9" name="OrderNo" required />
                 </div>
             </div>
             <div class="col-2">
@@ -26,8 +22,7 @@
             <div class="col-5">
                 <div class="input-group mb-3">
                     <label class="input-group-text col-3 text-light">Customer</label>
-                    @* <input id="customer" type="text" class="form-control col-9" name="Customer" /> *@
-                    <select class="form-select">
+                    <select class="form-select" name="ComCustomerId" required>
                         @if (ViewBag.Customers != null && ViewBag.Customers.Count > 0)
                         {
                             foreach (VMComCustomer customer in ViewBag.Customers)
@@ -50,7 +45,7 @@
             <div class="col-5 flatpickr">
                 <div class="input-group mb-3">
                     <label class="input-group-text col-3 text-light">Order Date</label>
-                    <input id="orderDate" type="text" class="form-control col-9" name="Date" value="@ViewBag.OrderDate" required />
+                    <input id="orderDate" type="text" class="form-control col-9" name="OrderDate" required />
                 </div>
             </div>
             <div class="col-2">
@@ -58,11 +53,12 @@
             <div class="col-5">
                 <div class="input-group mb-3">
                     <label class="input-group-text col-3 text-light">Address</label>
-                    <textarea class="form-control" id="address" rows="3" name="Address">@ViewBag.Address</textarea>
+                    <textarea class="form-control" id="address" rows="3" name="Address"></textarea>
                 </div>
             </div>
         </div>
-    </form>   
+        <input id="itemCarry" type="hidden" name="Items" />
+    </form>
 </div>
 
 <div class="align-middle text-center" style="background-color: gray;">
@@ -88,67 +84,34 @@
             </tr>
         </thead>
         <tbody id="itemData">
-        @if (Model.Items != null && Model.Items.Count > 0)
-        {
-            long num = Model.Items[0].SoItemId - (Model.Items[0].SoItemId - 1);
-            int totalItem = 0;
-            double totalAmount = 0;
-
-            foreach(VMSoItem item in Model.Items)
-            {
-                <tr>
-                    <td>@num</td>
-                    <td>
-                        <div class="btn-group" role="group">
-                            <button class="btn btn-outline-info" title="Edit...">
-                                <i class="fas fa-edit"></i>
-                            </button>
-                            &nbsp;
-                            <button class="btn btn-outline-danger" title="Delete...">
-                                <i class="fas fa-trash-alt"></i>
-                            </button>
-                        </div>
-                    </td>
-                    <td class="name">@item.ItemName</td>
-                    <td class="qty">@item.Quantity</td>
-                    <td class="price">@item.Price</td>
-                    <td class="total">@((item.Price * item.Quantity).ToString("C"))</td>
-                </tr>
-
-                num += 1;
-                totalItem += item.Quantity;
-                totalAmount += item.Price * item.Quantity;
-            }
-
-            numTotal = num;
-
             <tr>
                 <td colspan="3"></td>
-                <td id="totalItem">Total Item: @totalItem</td>
+                <td id="totalItem">Total Item: 0</td>
                 <td></td>
-                    <td id="totalAmount">Total Amount: @totalAmount.ToString("C")</td>
-            </tr>
-        }
-        else
-        {
-            <tr>
-                <td colspan="3"></td>
-                <td id="totalItem">Total Item: @ViewBag.TotalItem</td>
-                <td></td>
-                <td id="totalAmount">Total Amount: @ViewBag.TotalAmount</td>
-            </tr>
-        }
+                <td id="totalAmount">Total Amount: 0</td>
+            </tr>           
         </tbody>
     </table>
 </div>
 
+<div class="text-center">
+    <div class="btn-group" role="group">
+        <button id="btnAddOrder" class="btn btn-success" title="Edit...">
+            Save
+        </button>
+        <button id="btnCancelOrder" class="btn btn-secondary" title="Delete...">
+            Close
+        </button>
+    </div>
+</div>
+
 <script>
     $(document).ready(() => {
-        var totalOrderItem = parseInt("@ViewBag.TotalItem");
-        var totalOrderAmount = parseFloat("@ViewBag.TotalAmount");
+        var totalOrderItem = 0;
+        var totalOrderAmount = 0;
 
         $("#orderDate").flatpickr({
-            dateFormat: "d/m/Y"
+            dateFormat: "Y-m-d"
         });
 
         $("#btnAddItem").click(function(e) {
@@ -230,5 +193,91 @@
             $(this).parent().parent().parent().remove();
         });
 
+        $("#frmOrder").submit(function(e) {
+            e.preventDefault();
+        })
+
+        $("#frmOrder").validate({
+            rules: {
+                OrderNo: {
+                    required: true
+                },
+                OrderDate: {
+                    required: true
+                },               
+                ComCustomerId: {
+                    required: true
+                },               
+                Address: {
+                    required: true
+                }
+            }
+        });
+
+        $("#btnAddOrder").click(function(e) {
+            if ($("#frmOrder").valid()) {             
+                var items = [];
+
+                $("#itemData tr").slice(0, -1).each(function() {
+                    let item = {
+                        ItemName: $(this).find('.name').text().trim(),
+                        Quantity: $(this).find('.qty').text(),
+                        Price: $(this).find('.price').text()
+                    }
+                    items.push(item);
+                });
+
+                $("#itemCarry").val(JSON.stringify(items));
+
+                console.log($("#itemCarry").val());
+
+                // var date = $("#orderDate").val() ;
+                // $("#orderDate").val(date + "")
+
+                var order = $("#frmOrder").serializeArray();
+                var orderObject = {};
+
+                $.each(order, function(i, field) {
+                    orderObject[field.name] = field.value;
+                })
+               
+                orderObject.Items = JSON.parse(orderObject.Items);
+
+                console.log(JSON.stringify(orderObject));
+
+                $.ajax({
+                    url:"/Order/AddOrder",
+                    type: "post",
+                    contentType: 'application/json',
+                    data: JSON.stringify(orderObject),
+                    success: function (response) {
+                        if (response.statusCode == 200 || response.statusCode == 201) {
+                            location.href = "/Order";
+                        }
+                        else {
+                            toastAlert(response.message, "error", 10000)
+                        }
+                        console.log(response);
+                    },
+                    error: function (jqXHR, exception)  {
+                        if (jqXHR.status === 0) {
+                            toastAlert('Not connect.\n Verify Network.', "error", 10000);
+                        } else if (jqXHR.status == 404) {
+                            toastAlert('Requested page not found. [404]', "error", 10000);
+                        } else if (jqXHR.status == 500) {
+                            toastAlert('Internal Server Error [500].', "error", 10000);
+                        } else if (exception === 'parsererror') {
+                            toastAlert('Requested JSON parse failed.', "error", 10000);
+                        } else if (exception === 'timeout') {
+                            toastAlert('Time out error.', "error", 10000);
+                        } else if (exception === 'abort') {
+                            toastAlert('Ajax request aborted.', "error", 10000);
+                        } else {
+                            toastAlert('Uncaught Error.\n' + jqXHR.responseText, "error", 10000);
+                        }
+                    }
+                })
+            }
+        });
     })
 </script>

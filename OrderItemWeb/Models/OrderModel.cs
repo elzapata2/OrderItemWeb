@@ -1,5 +1,6 @@
 ﻿using System.Drawing.Printing;
 using System.Net;
+using System.Text;
 using Newtonsoft.Json;
 using OrderItemViewModel;
 
@@ -77,6 +78,37 @@ namespace OrderItemWeb.Models
             {
                 apiResponse.StatusCode = HttpStatusCode.InternalServerError;
                 apiResponse.Message = $"{HttpStatusCode.InternalServerError} - From OrderModel.GetOrderWithItems: Error when trying to reach Order API, {ex.Message}";
+            }
+
+            return apiResponse;
+        }
+
+        public async Task<VMResponse<VMSoOrder>> AddOrder(VMSoOrder data)
+        {
+            VMResponse<VMSoOrder> apiResponse = new VMResponse<VMSoOrder>();
+
+            try
+            {
+                jsonData = JsonConvert.SerializeObject(data);
+                content = new StringContent(jsonData, Encoding.UTF8, "application/json");
+
+                HttpResponseMessage apiResponseMsg = await httpClient.PostAsync($"{apiUrl}Order/AddOrder", content);
+                string apiMsgContent = apiResponseMsg.Content.ReadAsStringAsync().Result;
+
+                if (apiMsgContent != string.Empty)
+                {
+                    apiResponse = JsonConvert.DeserializeObject<VMResponse<VMSoOrder>>(apiMsgContent)!;
+                }
+                else
+                {
+                    apiResponse.StatusCode = apiResponseMsg.StatusCode;
+                    apiResponse.Message = $"{apiResponse.StatusCode} - From OrderModel.AddOrder: Can't reach Order API";
+                }
+            }
+            catch (Exception ex)
+            {
+                apiResponse.StatusCode = HttpStatusCode.InternalServerError;
+                apiResponse.Message = $"{HttpStatusCode.InternalServerError} - From OrderModel.AddOrder: Error when trying to reach Order API, {ex.Message}";
             }
 
             return apiResponse;

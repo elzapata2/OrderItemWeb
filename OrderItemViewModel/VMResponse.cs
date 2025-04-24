@@ -13,6 +13,8 @@ namespace OrderItemViewModel
         public string? Message { get; set; }
         public T? Data { get; set; }
         public long? TotalData { get; set; }
+        public long? TotalItem { get; set; }
+        public double? TotalAmount { get; set; }
 
         public VMResponse()
         {
@@ -20,6 +22,8 @@ namespace OrderItemViewModel
             Message = string.Empty;
             Data = default(T);
             TotalData = 0;
+            TotalItem = 0;
+            TotalAmount = 0;
         }
     }
 }

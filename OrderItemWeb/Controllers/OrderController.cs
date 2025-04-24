@@ -1,4 +1,5 @@
 ﻿using System.Net;
+using Azure;
 using Microsoft.AspNetCore.Mvc;
 using OrderItemViewModel;
 using OrderItemWeb.Models;
@@ -56,6 +57,43 @@ namespace OrderItemWeb.Controllers
             return View(response.Data);
         }
 
+        public async Task<IActionResult> Create(int? page, int? pageSize)
+        {
+            page = (page == null) ? defaultPage : page;
+            pageSize = (pageSize == null) ? defaultPageSize : pageSize;
+
+            VMResponse<List<VMComCustomer>?> customers = new VMResponse<List<VMComCustomer>?>();
+
+            ViewBag.Page = page;
+            ViewBag.PageSize = pageSize;
+
+            try
+            {
+                customers = await cust.GetAllCustomers();
+
+                if (customers.StatusCode == HttpStatusCode.OK)
+                {
+                    ViewBag.Customers = customers.Data;
+                }
+                else if (customers.StatusCode == HttpStatusCode.NoContent)
+                {
+                    ViewBag.Customers = null;
+                }
+                else
+                {
+                    throw new Exception(customers.Message);
+                }
+            }
+            catch (Exception ex)
+            {
+                customers.StatusCode = HttpStatusCode.InternalServerError;
+                customers.Message = $"{HttpStatusCode.InternalServerError} - From OrderController.CreateEdit: {ex.Message}";
+                customers.Data = new List<VMComCustomer>();
+            }
+
+            return View();
+        }
+
         public async Task<IActionResult> CreateEdit(long? orderId, int? page, int? pageSize)
         {
             VMResponse<VMSoOrder> response = new VMResponse<VMSoOrder>();
@@ -69,6 +107,8 @@ namespace OrderItemWeb.Controllers
             ViewBag.SearchDate = null;
             ViewBag.CustomerId = 1;
             ViewBag.Address = null;
+            ViewBag.TotalItem = 0;
+            ViewBag.TotalAmount = 0;
 
             try
             {
@@ -100,6 +140,8 @@ namespace OrderItemWeb.Controllers
                 ViewBag.OrderDate = response.Data.OrderDate.Date.ToShortDateString();
                 ViewBag.CustomerId = response.Data.ComCustomerId;
                 ViewBag.Address = response.Data.Address;
+                ViewBag.TotalItem = response.TotalItem;
+                ViewBag.TotalAmount = response.TotalAmount;
             }
             catch (Exception ex)
             {
@@ -119,6 +161,24 @@ namespace OrderItemWeb.Controllers
             ViewBag.OrderId = orderId;
             ViewBag.Title = "Delete Order";
             return View();
+        }
+
+        [HttpPost]
+        public async Task<VMResponse<VMSoOrder>> AddOrderAsync([FromBody] VMSoOrder data)
+        {
+            VMResponse<VMSoOrder> response = new VMResponse<VMSoOrder>();
+
+            try
+            {
+                response = await order.AddOrder(data);
+            }
+            catch (Exception ex)
+            {
+                response.StatusCode = HttpStatusCode.InternalServerError;
+                response.Message = $"{HttpStatusCode.InternalServerError} - From OrderController.AddOrder: {ex.Message}";
+            }
+
+            return response;
         }
 
         [HttpPost]
