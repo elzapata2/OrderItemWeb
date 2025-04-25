@@ -16,6 +16,7 @@
                     <label class="input-group-text col-3 text-light">Sales Order Number</label>
                     <input id="keyword" type="text" class="form-control col-9" name="OrderNo" required />
                 </div>
+                <p id="orderNoErr" style="color: red"></p>
             </div>
             <div class="col-2">
             </div>
@@ -47,6 +48,7 @@
                     <label class="input-group-text col-3 text-light">Order Date</label>
                     <input id="orderDate" type="text" class="form-control col-9" name="OrderDate" required />
                 </div>
+                <p id="orderDateErr" style="color: red"></p>
             </div>
             <div class="col-2">
             </div>
@@ -55,6 +57,7 @@
                     <label class="input-group-text col-3 text-light">Address</label>
                     <textarea class="form-control" id="address" rows="3" name="Address"></textarea>
                 </div>
+                <p id="orderAddressErr" style="color: red"></p>
             </div>
         </div>
         <input id="itemCarry" type="hidden" name="Items" />
@@ -211,6 +214,33 @@
                 Address: {
                     required: true
                 }
+            },
+            messages: {
+                OrderNo: {
+                    required: "Order Number Is Required"
+                },
+                OrderDate: {
+                    required: "Order Date Is Required"
+                },
+                Address: {
+                    required: "Address Is Required"
+                }
+            },
+            errorPlacement: function (error, element) {
+                var message = error.text();
+
+                if (message == "Order Number Is Required")
+                {
+                    error.appendTo("#orderNoErr");
+                }
+                else if (message == "Order Date Is Required")
+                {
+                    error.appendTo("#orderDateErr");
+                }
+                else if (message == "Address Is Required")
+                {
+                    error.appendTo("#orderAddressErr");
+                }
             }
         });
 
@@ -279,5 +309,9 @@
                 })
             }
         });
+
+        $("#btnCancelOrder").click(function() {
+            location.href = "/Order";
+        })
     })
 </script>

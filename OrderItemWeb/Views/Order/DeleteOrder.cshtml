@@ -38,7 +38,7 @@
                 },
                 datatype: "json",
                 success: function(response) {
-                    location.reload();
+                    location.href = "/Order";
                 },
                 error: function(req) {
                     var err = req.responseText.split(": ");

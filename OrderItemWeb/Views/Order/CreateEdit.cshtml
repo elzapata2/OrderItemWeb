@@ -20,6 +20,8 @@
                     <label class="input-group-text col-3 text-light">Sales Order Number</label>
                     <input id="keyword" type="text" class="form-control col-9" name="OrderNo" value="@ViewBag.OrderNo" required />
                 </div>
+                @* <label for="Stock" generated="true" class="error"></label> *@
+                <p id="orderNoErr" style="color: red"></p>
             </div>
             <div class="col-2">
             </div>
@@ -52,6 +54,7 @@
                     <label class="input-group-text col-3 text-light">Order Date</label>
                     <input id="orderDate" type="text" class="form-control col-9" name="OrderDate" value="@ViewBag.OrderDate" required />
                 </div>
+                <p id="orderDateErr" style="color: red"></p>
             </div>
             <div class="col-2">
             </div>
@@ -60,6 +63,7 @@
                     <label class="input-group-text col-3 text-light">Address</label>
                     <textarea class="form-control" id="address" rows="3" name="Address">@ViewBag.Address</textarea>
                 </div>
+                <p id="orderAddressErr" style="color: red"></p>
             </div>
         </div>
         <input type="hidden" name="SoOrderId" value="@ViewBag.OrderId" />
@@ -113,8 +117,8 @@
                     </td>
                     <td class="name">@item.ItemName</td>
                     <td class="qty">@item.Quantity</td>
-                    <td class="price">@item.Price</td>
-                    <td class="total">@((item.Price * item.Quantity).ToString("C"))</td>
+                    <td class="price">@(String.Format("{0:N0}", item.Price))</td>
+                        <td class="total">@(String.Format("{0:N0}", item.Price * item.Quantity))</td>
                 </tr>
 
                 num += 1;
@@ -126,9 +130,9 @@
 
             <tr>
                 <td colspan="3"></td>
-                <td id="totalItem">Total Item: @totalItem</td>
+                <td id="totalItem">Total Item: @ViewBag.TotalItem</td>
                 <td></td>
-                <td id="totalAmount">Total Amount: @totalAmount.ToString("C")</td>
+                <td id="totalAmount">Total Amount: @(String.Format("{0:N0}", ViewBag.TotalAmount))</td>
             </tr>
         }
         else
@@ -145,7 +149,7 @@
 </div>
 
 <div class="row">
-    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+    <div id="currentPage" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
         Page @ViewBag.Page of @ViewBag.TotalPages
     </div>
     <div id="paginationSection" class="col-xs-5 col-sm-5 col-md-5 col-lg-7 d-flex justify-content-center">
@@ -282,7 +286,7 @@
 
             debugger;
             if (addedItems.length == 0) {
-                 $("#itemData tr:last").before(`<tr><td colspan="6" style="background-color: green;">New Item</td></tr>`)
+                 $("#itemData tr:last").before(`<tr><td id="newItemMarker" colspan="6" style="background-color: green;">New Item</td></tr>`)
             }
             $("#itemData tr:last").before(`<tr class="editable">` + "<td></td>" + "<td>" + `<div class="btn-group" role="group">
                             <button class="btn btn-info newData" title="Edit...">
@@ -296,7 +300,10 @@
             `<td class="name" contenteditable></td>` + '<td class="qty" contenteditable></td>' +
             `<td class="price" contenteditable></td>` + `<td class="total"></td>` + "</tr>")
 
+            $("#pageSize").prop("disabled", true);
+
             currentPage = totalPages;
+            $("#currentPage").text(`Page ${currentPage} of ${totalPages}`);
         });
 
         //Btn Edit
@@ -318,6 +325,10 @@
                 $(this).parent().html(
                             `<button class="btn btn-info newData" title="Edit...">
                                 <i class="far fa-save"></i>
+                            </button>
+                            &nbsp;
+                            <button id="btnCancelItem" class="btn btn-danger" title="Delete...">
+                                <i class="far fa-times-circle"></i>
                             </button>`);
             }
             else {
@@ -335,6 +346,12 @@
             var td = $(this).parent().parent();
 
             var price = parseFloat(td.siblings(".price").text().trim())
+
+            td.siblings(".price").text(price.toLocaleString('id-ID', {
+                                minimumFractionDigits: 0,
+                                maximumFractionDigits: 0
+                            }));
+
             var qty = parseInt(td.siblings(".qty").text().trim())
 
             if (isNaN(price) || isNaN(qty)) {
@@ -351,7 +368,7 @@
                             &nbsp;
                             <button data-id="${negativeDataId}" class="btn btn-outline-danger" title="Delete...">
                                 <i class="fas fa-trash-alt"></i>
-                            </button>`);
+                            </button>`);               
             }
             else {                
                 td.children().append(`<button data-id="${dataId}" class="btn btn-outline-info" title="Edit...">
@@ -361,11 +378,13 @@
                             <button data-id="${dataId}" class="btn btn-outline-danger" title="Delete...">
                                 <i class="fas fa-trash-alt"></i>
                             </button>`);
-            }
-          
+            }           
             
-            var total = price * qty
-            td.siblings(".total").text(total);
+            var total = price * qty;
+            td.siblings(".total").text(total.toLocaleString('id-ID', {
+                                minimumFractionDigits: 0,
+                                maximumFractionDigits: 0
+                            }));
 
             // var totalItemTxt = $("#totalItem").text();
 
@@ -387,18 +406,23 @@
             console.log(`Total Amount: ${totalOrderAmount}`);
 
             // var totalAmount = total + parseInt(totalAmountTxt.substring(14));
-            $("#totalAmount").text(`Total Amount: ${totalOrderAmount}`);
+            var amountCurr = totalOrderAmount.toLocaleString('id-ID', {
+                                minimumFractionDigits: 0,
+                                maximumFractionDigits: 0
+                            });
+            $("#totalAmount").text(`Total Amount: ${amountCurr}`);
 
             
 
             if ($(this).hasClass("newData")) {
                 $("#itemData tr").slice(-2, -1).each(function() {
+                    var floatPrice = $(this).find('.price').text().replace(/\./g, "");
                     let item = {
                         SoItemId: negativeDataId,
                         SoOrderId: orderId,
                         ItemName: $(this).find('.name').text().trim(),
                         Quantity: $(this).find('.qty').text(),
-                        Price: $(this).find('.price').text()
+                        Price: parseFloat(floatPrice)
                     }
                     addedItems.push(item);
                 });
@@ -418,13 +442,14 @@
                 $("#itemData tr").slice(0, -1).each(function(i, itemOnTable) {
                     var dataIdAfter = $(this).find('[data-id]').data("id");
                     let foundInList =  false;
+                    var floatPrice = $(this).find('.price').text().replace(/\./g, "");
                     if (dataId == dataIdAfter) {
                         let item = {
                             SoItemId: dataId,
                             SoOrderId: orderId,
                             ItemName: $(this).find('.name').text().trim(),
                             Quantity: $(this).find('.qty').text(),
-                            Price: $(this).find('.price').text()
+                            Price: parseFloat(floatPrice)
                         }
 
                         $.each(addedItems, function(i, itemOnList)  {
@@ -452,12 +477,13 @@
                     let foundInList =  false;
                     console.log(dataId);
                     if (dataId == dataIdAfter) {
+                        var floatPrice = $(this).find('.price').text().replace(/\./g, "");
                         let item = {
                             SoItemId: dataId,
                             SoOrderId: orderId,
                             ItemName: $(this).find('.name').text().trim(),
                             Quantity: $(this).find('.qty').text(),
-                            Price: $(this).find('.price').text()
+                            Price: parseFloat(floatPrice)
                         }
 
                         $.each(editedItems, function(i, itemOnList) {
@@ -482,13 +508,28 @@
                     
                 });
             }
+
+            $("#pageSize").prop("disabled", true);
         });
+
+        $(document).on('click', '.btn-danger', function(e) {
+            $(this).parent().parent().parent().remove();
+
+            if (addedItems.length == 0) {
+                $("#newItemMarker").parent().remove();
+                $("#pageSize").prop("disabled", false);
+            }
+        })
 
         $(document).on('click', '.btn-outline-danger', function(e) {
             var dataId = $(this).data("id");
+            let itemGone = 0;
+            let amountGone = 0;
             if (dataId < 0) {
                 for (i = 0; i < addedItems.length; i++) {
                     if (addedItems[i].SoItemId == dataId) {
+                        itemGone += addedItems[i].Quantity;
+                        amountGone += addedItems[i].Quantity * addedItems[i].Price;
                         addedItems.splice(i, 1);
                         break;
                     }
@@ -499,12 +540,15 @@
                     var dataIdTable = $(this).find('[data-id]').data("id");
                     // let foundInList =  false;
                     if (dataId == dataIdTable) {
+                        var floatPrice = $(this).find('.price').text().replace(/\./g, "");
                         let item = {
                             SoItemId: dataId,
                             ItemName: $(this).find('.name').text().trim(),
                             Quantity: $(this).find('.qty').text(),
-                            Price: $(this).find('.price').text()
+                            Price: parseFloat(floatPrice)
                         }
+                        itemGone += item.Quantity;
+                        amountGone += item.Quantity * item.Price;
                         deletedItems.push(item);
 
                         for (i = 0; i < editedItems.length; i++) {
@@ -516,16 +560,35 @@
                     }
                 });                
             }
+
+            totalOrderItem -= itemGone;
+            $("#totalItem").text(`Total Item: ${totalOrderItem}`);
+
+            totalOrderAmount -= amountGone;
+            var amountCurr = totalOrderAmount.toLocaleString('id-ID', {
+                                minimumFractionDigits: 0,
+                                maximumFractionDigits: 0
+                            });
+            $("#totalAmount").text(`Total Amount: ${amountCurr}`);
+
             $(this).parent().parent().parent().remove();
             if ($("#itemData tr").length <= 1) {
-                currentPage -= 1;
+                currentPage -= 1;               
                 pageSize = parseInt($("#pageSize").val());
                 totalPages -= 1;
+                $("#currentPage").text(`Page ${currentPage} of ${totalPages}`);
                 CallAjaxToNextPage(currentPage, pageSize)
             }
             console.log(addedItems);
             console.log(editedItems);
             console.log(deletedItems);
+
+            $("#pageSize").prop("disabled", true);
+
+            if (addedItems.length == 0) {
+                $("#newItemMarker").parent().remove();
+                $("#pageSize").prop("disabled", false);
+            }
         });       
 
         function CallAjaxToNextPage(pageTo, pageSizeCall)
@@ -580,6 +643,7 @@
                         //     });
                         // }
                         $("#itemData tr:not(:last)").remove();
+                        var counter = 1;
                         $.each(response.data.items, function(i, item) {
                             if (editedItems.length > 0) {
                                 $.each(editedItems, function(i, itemEdited) {
@@ -593,8 +657,17 @@
                             }
 
                             let totalAmountItems = item.quantity * item.price;
+                            var priceCurr = item.price.toLocaleString('id-ID', {
+                                                minimumFractionDigits: 0,
+                                                maximumFractionDigits: 0
+                                            });
+                            var amountCurr = totalAmountItems.toLocaleString('id-ID', {
+                                                minimumFractionDigits: 0,
+                                                maximumFractionDigits: 0
+                                            });
+
                             console.log(item.soItemId);
-                            $("#itemData tr:last").before(`<tr class="editable">` + "<td></td>" + "<td>" + `<div class="btn-group" role="group">
+                            $("#itemData tr:last").before(`<tr class="editable">` + `<td>${counter}</td>` + "<td>" + `<div class="btn-group" role="group">
                             <button data-id="${item.soItemId}" class="btn btn-outline-info" title="Edit...">
                                 <i class="fas fa-edit"></i>
                             </button>
@@ -604,7 +677,9 @@
                             </button>
                             </div>` +"</td>" +
                             `<td class="name">${item.itemName}</td>` + `<td class="qty">${item.quantity}</td>` +
-                            `<td class="price">${item.price}</td>` + `<td class="total">${totalAmountItems}</td>` + "</tr>")
+                            `<td class="price">${priceCurr}</td>` + `<td class="total">${amountCurr}</td>` + "</tr>")
+
+                            counter += 1;
                         });
 
                         if (pageTo == totalPages && addedItems.length > 0) {
@@ -612,6 +687,14 @@
                             for (i = 0; i < addedItems.length; i++) {
                                 var itemTaken = addedItems[i];
                                 let totalAmountItems = itemTaken.Quantity * itemTaken.Price;
+                                priceCurr = itemTaken.Price.toLocaleString('id-ID', {
+                                                minimumFractionDigits: 0,
+                                                maximumFractionDigits: 0
+                                            });
+                                amountCurr = totalAmountItems.toLocaleString('id-ID', {
+                                                minimumFractionDigits: 0,
+                                                maximumFractionDigits: 0
+                                            });
                                 $("#itemData tr:last").before(`<tr class="editable">` + "<td></td>" + "<td>" + `<div class="btn-group" role="group">
                                 <button data-id="${itemTaken.SoItemId}" class="btn btn-outline-info" title="Edit...">
                                     <i class="fas fa-edit"></i>
@@ -622,7 +705,7 @@
                                 </button>
                                 </div>` +"</td>" +
                                 `<td class="name">${itemTaken.ItemName}</td>` + `<td class="qty">${itemTaken.Quantity}</td>` +
-                                `<td class="price">${itemTaken.Price}</td>` + `<td class="total">${totalAmountItems}</td>` + "</tr>");
+                                `<td class="price">${priceCurr}</td>` + `<td class="total">${amountCurr}</td>` + "</tr>");
                             }
                         }
 
@@ -762,6 +845,7 @@
             pageSize = parseInt($("#pageSize").val());
             CallAjaxToNextPage(currentPage + 1, pageSize);
             currentPage += 1;
+            $("#currentPage").text(`Page ${currentPage} of ${totalPages}`);
         });
 
         $(document).on('click', '.previousPage', function(e) {
@@ -769,6 +853,7 @@
             pageSize = parseInt($("#pageSize").val());
             CallAjaxToNextPage(currentPage - 1, pageSize);
             currentPage -= 1;          
+            $("#currentPage").text(`Page ${currentPage} of ${totalPages}`);
         });
 
         $("#frmOrder").submit(function(e) {
@@ -788,6 +873,33 @@
                 },
                 Address: {
                     required: true
+                }
+            },
+            messages: {
+                OrderNo: {
+                    required: "Order Number Is Required"
+                },
+                OrderDate: {
+                    required: "Order Date Is Required"
+                },
+                Address: {
+                    required: "Address Is Required"
+                }
+            },
+            errorPlacement: function (error, element) {
+                var message = error.text();
+
+                if (message == "Order Number Is Required")
+                {
+                    error.appendTo("#orderNoErr");
+                }
+                else if (message == "Order Date Is Required")
+                {
+                    error.appendTo("#orderDateErr");
+                }
+                else if (message == "Address Is Required")
+                {
+                    error.appendTo("#orderAddressErr");
                 }
             }
         });
@@ -843,6 +955,10 @@
                     }
                 })
             }
+        })
+
+        $("#btnCancelOrder").click(function() {
+            location.href = "/Order";
         })
     })
 </script>

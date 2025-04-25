@@ -31,7 +31,7 @@
         <button id="btnAddOrder" type="button" class="btn btn-light-primary btn-block mb-5 text-light"><span>Add New Data</span></button>
     </div>
     <div class="col-3">
-        <button type="button" class="btn btn-light-success btn-block mb-5 text-light"><span><i class="fas fa-file-excel"></i> Export To Excel</span></button>
+        <button id="btnExportToExcel" type="button" class="btn btn-light-success btn-block mb-5 text-light"><span><i class="fas fa-file-excel"></i> Export To Excel</span></button>
     </div>
 </div>
 
@@ -40,7 +40,7 @@
         <thead>
             <tr>
                 <th class="col-1">No</th>
-                <th class="col-2">Action</th>
+                <th class="col-2 no-export">Action</th>
                 <th class="col-3">Sales Order</th>
                 <th class="col-3">Order Date</th>
                 <th class="col-3">Customer</th>
@@ -48,7 +48,7 @@
         </thead>
         <tbody>
 
-            @if (Model.Count > 0)
+            @if (Model != null && Model.Count > 0)
             {
                 long num = 1;
                 foreach(VMSoOrder order in Model)
@@ -232,6 +232,8 @@
     </div>
 </div>
 
+<script src="https://cdn.rawgit.com/rainabba/jquery-table2excel/1.1.0/dist/jquery.table2excel.min.js"></script>
+
 <script>
     $(document).ready(() => {
         $("#orderDate").flatpickr({
@@ -260,5 +262,18 @@
             $("#staticModalBody").load(`/Order/DeleteOrder/?orderNo=${orderNo}&orderId=${orderId}`);
             $("#staticModal").modal("show");
         });
+
+        $("#btnExportToExcel").click(function() {
+            $('table tr').each(function () {
+                $(this).find('td:eq(1), th:eq(1)').addClass('no-export');
+            });
+            $(".table").table2excel({
+                exclude: ".no-export",
+                filename: "OrderSales.xls",
+                fileext: ".xls",
+                exclude_links: true,
+                exclude_inputs: true
+            })
+        })
     });
 </script>
