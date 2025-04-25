@@ -20,6 +20,24 @@ namespace OrderItemWeb.Controllers
             cust = new CustomerModel(_config);
         }
 
+        public async Task<VMResponse<VMSoOrder>> GetOrderItemsAsync (long orderId, int page, int pageSize, List<long>? exceptionIds)
+        {
+            VMResponse<VMSoOrder> response = new VMResponse<VMSoOrder>();
+
+            try
+            {
+                response = await order.GetOrderWithItems(orderId, page, pageSize, exceptionIds);
+            }
+            catch (Exception ex)
+            {
+                response.StatusCode = HttpStatusCode.InternalServerError;
+                response.Message = $"{HttpStatusCode.InternalServerError} - From OrderController.GetOrderItems: {ex.Message}";
+                response.Data = new VMSoOrder();
+            }
+
+            return response;
+        }
+
         public async Task<IActionResult> Index(string? keyword, string? searchDate, int? page, int? pageSize)
         {
             VMResponse<List<VMSoOrder>?> response = new VMResponse<List<VMSoOrder>?>();
@@ -94,7 +112,7 @@ namespace OrderItemWeb.Controllers
             return View();
         }
 
-        public async Task<IActionResult> CreateEdit(long? orderId, int? page, int? pageSize)
+        public async Task<IActionResult> CreateEdit(long orderId, int? page, int? pageSize)
         {
             VMResponse<VMSoOrder> response = new VMResponse<VMSoOrder>();
 
@@ -104,7 +122,7 @@ namespace OrderItemWeb.Controllers
             ViewBag.Page = page;
             ViewBag.PageSize = pageSize;
             ViewBag.Keyword = null;
-            ViewBag.SearchDate = null;
+            ViewBag.OrderDate = null;
             ViewBag.CustomerId = 1;
             ViewBag.Address = null;
             ViewBag.TotalItem = 0;
@@ -127,17 +145,17 @@ namespace OrderItemWeb.Controllers
                     throw new Exception(customers.Message);
                 }
 
-                if (orderId == null)
-                {
-                    response.Data = new VMSoOrder();
-                    return View(response.Data);
-                }
+                //if (orderId == null)
+                //{
+                //    response.Data = new VMSoOrder();
+                //    return View(response.Data);
+                //}
 
            
-                response = await order.GetOrderWithItems((long)orderId, (int)page, (int)pageSize);
+                response = await order.GetOrderWithItems(orderId, (int)page, (int)pageSize, null);
 
                 ViewBag.OrderNo = response.Data!.OrderNo;
-                ViewBag.OrderDate = response.Data.OrderDate.Date.ToShortDateString();
+                ViewBag.OrderDate = response.Data.OrderDate.Date.ToString("yyyy-MM-dd");
                 ViewBag.CustomerId = response.Data.ComCustomerId;
                 ViewBag.Address = response.Data.Address;
                 ViewBag.TotalItem = response.TotalItem;
@@ -151,6 +169,8 @@ namespace OrderItemWeb.Controllers
             }
 
             ViewBag.OrderId = orderId;
+
+            ViewBag.TotalPages = (response.TotalData % ViewBag.PageSize != 0) ? response.TotalData / ViewBag.PageSize + 1 : response.TotalData / ViewBag.PageSize;
 
             return View(response.Data);
         }
@@ -194,6 +214,24 @@ namespace OrderItemWeb.Controllers
             {
                 response.StatusCode = HttpStatusCode.InternalServerError;
                 response.Message = $"{HttpStatusCode.InternalServerError} - From OrderController.DeleteOrderAsync: {ex.Message}";
+            }
+
+            return response;
+        }
+
+        [HttpPost]
+        public async Task<VMResponse<VMSoOrder>> UpdateOrderAsync([FromBody] VMSoOrder data)
+        {
+            VMResponse<VMSoOrder> response = new VMResponse<VMSoOrder>();
+
+            try
+            {
+                response = await order.UpdateOrder(data);
+            }
+            catch (Exception ex)
+            {
+                response.StatusCode = HttpStatusCode.InternalServerError;
+                response.Message = $"{HttpStatusCode.InternalServerError} - From OrderController.UpdateOrderAsync: {ex.Message}";
             }
 
             return response;

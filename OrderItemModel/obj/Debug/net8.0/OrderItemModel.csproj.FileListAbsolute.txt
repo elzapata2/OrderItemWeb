@@ -22,9 +22,9 @@ C:\Users\Zapata\Documents\.NET Projects\OrderItemWeb\OrderItemModel\bin\Debug\ne
 C:\Users\Zapata\Documents\.NET Projects\OrderItemWeb\OrderItemModel\bin\Debug\net8.0\OrderItemWeb.pdb
 C:\Users\Zapata\Documents\.NET Projects\OrderItemWeb\OrderItemModel\obj\Debug\net8.0\OrderItemModel.csproj.AssemblyReference.cache
 C:\Users\Zapata\Documents\.NET Projects\OrderItemWeb\OrderItemModel\obj\Debug\net8.0\OrderIte.8ECFAF4B.Up2Date
-C:\Users\Zapata\Documents\.NET Projects\Git\OrderItemWeb\OrderItemModel\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\Zapata\Documents\.NET Projects\Git\OrderItemWeb\OrderItemModel\bin\Debug\net8.0\OrderItemWeb.deps.json
 C:\Users\Zapata\Documents\.NET Projects\Git\OrderItemWeb\OrderItemModel\bin\Debug\net8.0\OrderItemWeb.runtimeconfig.json
+C:\Users\Zapata\Documents\.NET Projects\Git\OrderItemWeb\OrderItemModel\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\Zapata\Documents\.NET Projects\Git\OrderItemWeb\OrderItemModel\bin\Debug\net8.0\appsettings.json
 C:\Users\Zapata\Documents\.NET Projects\Git\OrderItemWeb\OrderItemModel\bin\Debug\net8.0\libman.json
 C:\Users\Zapata\Documents\.NET Projects\Git\OrderItemWeb\OrderItemModel\bin\Debug\net8.0\OrderItemWeb.staticwebassets.runtime.json
@@ -34,8 +34,10 @@ C:\Users\Zapata\Documents\.NET Projects\Git\OrderItemWeb\OrderItemModel\bin\Debu
 C:\Users\Zapata\Documents\.NET Projects\Git\OrderItemWeb\OrderItemModel\bin\Debug\net8.0\OrderItemModel.runtimeconfig.json
 C:\Users\Zapata\Documents\.NET Projects\Git\OrderItemWeb\OrderItemModel\bin\Debug\net8.0\OrderItemModel.dll
 C:\Users\Zapata\Documents\.NET Projects\Git\OrderItemWeb\OrderItemModel\bin\Debug\net8.0\OrderItemModel.pdb
+C:\Users\Zapata\Documents\.NET Projects\Git\OrderItemWeb\OrderItemModel\bin\Debug\net8.0\OrderItemViewModel.dll
 C:\Users\Zapata\Documents\.NET Projects\Git\OrderItemWeb\OrderItemModel\bin\Debug\net8.0\OrderItemWeb.dll
 C:\Users\Zapata\Documents\.NET Projects\Git\OrderItemWeb\OrderItemModel\bin\Debug\net8.0\OrderItemWeb.pdb
+C:\Users\Zapata\Documents\.NET Projects\Git\OrderItemWeb\OrderItemModel\bin\Debug\net8.0\OrderItemViewModel.pdb
 C:\Users\Zapata\Documents\.NET Projects\Git\OrderItemWeb\OrderItemModel\obj\Debug\net8.0\OrderItemModel.csproj.AssemblyReference.cache
 C:\Users\Zapata\Documents\.NET Projects\Git\OrderItemWeb\OrderItemModel\obj\Debug\net8.0\OrderItemModel.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Zapata\Documents\.NET Projects\Git\OrderItemWeb\OrderItemModel\obj\Debug\net8.0\OrderItemModel.AssemblyInfoInputs.cache
@@ -48,5 +50,3 @@ C:\Users\Zapata\Documents\.NET Projects\Git\OrderItemWeb\OrderItemModel\obj\Debu
 C:\Users\Zapata\Documents\.NET Projects\Git\OrderItemWeb\OrderItemModel\obj\Debug\net8.0\OrderItemModel.pdb
 C:\Users\Zapata\Documents\.NET Projects\Git\OrderItemWeb\OrderItemModel\obj\Debug\net8.0\OrderItemModel.genruntimeconfig.cache
 C:\Users\Zapata\Documents\.NET Projects\Git\OrderItemWeb\OrderItemModel\obj\Debug\net8.0\ref\OrderItemModel.dll
-C:\Users\Zapata\Documents\.NET Projects\Git\OrderItemWeb\OrderItemModel\bin\Debug\net8.0\OrderItemViewModel.dll
-C:\Users\Zapata\Documents\.NET Projects\Git\OrderItemWeb\OrderItemModel\bin\Debug\net8.0\OrderItemViewModel.pdb

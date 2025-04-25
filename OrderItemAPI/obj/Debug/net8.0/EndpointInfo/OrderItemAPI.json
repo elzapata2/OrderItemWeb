@@ -143,6 +143,17 @@
               "type": "integer",
               "format": "int32"
             }
+          },
+          {
+            "name": "exceptionIds",
+            "in": "query",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "format": "int64"
+              }
+            }
           }
         ],
         "responses": {

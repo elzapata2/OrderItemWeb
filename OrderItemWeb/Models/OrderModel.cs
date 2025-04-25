@@ -54,14 +54,23 @@ namespace OrderItemWeb.Models
             return apiResponse;
         }
 
-        public async Task<VMResponse<VMSoOrder>> GetOrderWithItems(long orderId, int page, int pageSize)
+        public async Task<VMResponse<VMSoOrder>> GetOrderWithItems(long orderId, int page, int pageSize, List<long>? exceptionIds)
         {
             VMResponse<VMSoOrder> apiResponse = new VMResponse<VMSoOrder>();
 
             try
             {
+                string addedUrl = "";
+                if (exceptionIds != null && exceptionIds.Count > 0)
+                {
+                    for (int i = 0; i < exceptionIds.Count; i++)
+                    {
+                        addedUrl += $"&exceptionIds={exceptionIds[i]}";
+                    }
+                }
+
                 HttpResponseMessage apiResponseMsg =
-                    await httpClient.GetAsync($"{apiUrl}Order/GetOrderWithItems?orderId={orderId}&page={page}&itemsperpage={pageSize}");
+                    await httpClient.GetAsync($"{apiUrl}Order/GetOrderWithItems?orderId={orderId}&page={page}&itemsperpage={pageSize}{addedUrl}");
                 string apiMsgContent = apiResponseMsg.Content.ReadAsStringAsync().Result;
 
                 if (apiMsgContent != string.Empty)
@@ -138,6 +147,37 @@ namespace OrderItemWeb.Models
             {
                 apiResponse.StatusCode = HttpStatusCode.InternalServerError;
                 apiResponse.Message = $"{HttpStatusCode.InternalServerError} - From OrderModel.DeleteOrder: Error when trying to reach Order API, {ex.Message}";
+            }
+
+            return apiResponse;
+        }
+
+        public async Task<VMResponse<VMSoOrder>> UpdateOrder(VMSoOrder data)
+        {
+            VMResponse<VMSoOrder> apiResponse = new VMResponse<VMSoOrder>();
+
+            try
+            {
+                jsonData = JsonConvert.SerializeObject(data);
+                content = new StringContent(jsonData, Encoding.UTF8, "application/json");
+
+                HttpResponseMessage apiResponseMsg = await httpClient.PutAsync($"{apiUrl}Order/UpdateOrder", content);
+                string apiMsgContent = apiResponseMsg.Content.ReadAsStringAsync().Result;
+
+                if (apiMsgContent != string.Empty)
+                {
+                    apiResponse = JsonConvert.DeserializeObject<VMResponse<VMSoOrder>>(apiMsgContent)!;
+                }
+                else
+                {
+                    apiResponse.StatusCode = apiResponseMsg.StatusCode;
+                    apiResponse.Message = $"{apiResponse.StatusCode} - From OrderModel.UpdateOrder: Can't reach Order API";
+                }
+            }
+            catch (Exception ex)
+            {
+                apiResponse.StatusCode = HttpStatusCode.InternalServerError;
+                apiResponse.Message = $"{HttpStatusCode.InternalServerError} - From OrderModel.UpdateOrder: Error when trying to reach Order API, {ex.Message}";
             }
 
             return apiResponse;

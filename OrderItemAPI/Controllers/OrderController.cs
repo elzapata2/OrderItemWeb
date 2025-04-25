@@ -65,13 +65,13 @@ namespace OrderItemAPI.Controllers
         }
 
         [HttpGet("[action]")]
-        public async Task<ActionResult> GetOrderWithItems(long orderId, int page, int itemsPerPage)
+        public async Task<ActionResult> GetOrderWithItems(long orderId, int page, int itemsPerPage, [FromQuery] List<long>? exceptionIds)
         {
             VMResponse<VMSoOrder> response = new VMResponse<VMSoOrder>();
 
             try
             {
-                response = await Task.Run(() => order.GetOrderWithItems(orderId, page, itemsPerPage));
+                response = await Task.Run(() => order.GetOrderWithItems(orderId, page, itemsPerPage, exceptionIds));
 
                 if (response.StatusCode == HttpStatusCode.OK)
                 {

@@ -110,7 +110,23 @@ namespace OrderItemDataAccess
             return response;
         }
 
-        public VMResponse<VMSoOrder> GetOrderWithItems(long orderId, int page, int itemsPerPage)
+        //public List<VMSoItem>? GetTempDeletedItems(long itemId)
+        //{
+        //    return (
+        //        from vw in db.ViewSoItems
+        //        where vw.SoItemId == itemId
+        //        select new VMSoItem
+        //        {
+        //            SoItemId = vw.SoItemId,
+        //            SoOrderId = vw.SoOrderId,
+        //            ItemName = vw.ItemName,
+        //            Quantity = vw.Quantity,
+        //            Price = vw.Price
+        //        }
+        //        ).ToList();
+        //}
+
+        public VMResponse<VMSoOrder> GetOrderWithItems(long orderId, int page, int itemsPerPage, List<long>? exceptionIds)
         {
             VMResponse<VMSoOrder> response = new VMResponse<VMSoOrder>();
 
@@ -129,32 +145,85 @@ namespace OrderItemDataAccess
                     }
                     );
 
-                VMSoOrder? data = (
-                    from ord in db.SoOrders
-                    join cust in db.ComCustomers on ord.ComCustomerId equals cust.ComCustomerId
-                    where ord.SoOrderId == orderId
-                    select new VMSoOrder
-                    {
-                        SoOrderId = ord.SoOrderId,
-                        OrderNo = ord.OrderNo,
-                        OrderDate = ord.OrderDate,
-                        ComCustomerId = ord.ComCustomerId,
-                        ComCustomerName = cust.CustomerName,
-                        Address = ord.Address,
-                        Items = queryItems.Skip((page - 1) * itemsPerPage).Take(itemsPerPage).ToList()
-                        //).ToList()
-                    }
-                    ).FirstOrDefault();
+                VMSoOrder? data = new VMSoOrder();
+
+                if (exceptionIds != null)
+                {
+                    data = (
+                        from ord in db.SoOrders
+                        join cust in db.ComCustomers on ord.ComCustomerId equals cust.ComCustomerId
+                        where ord.SoOrderId == orderId
+                        select new VMSoOrder
+                        {
+                            SoOrderId = ord.SoOrderId,
+                            OrderNo = ord.OrderNo,
+                            OrderDate = ord.OrderDate,
+                            ComCustomerId = ord.ComCustomerId,
+                            ComCustomerName = cust.CustomerName,
+                            Address = ord.Address,
+                            Items = queryItems.Where(x => !exceptionIds.Contains(x.SoItemId)).Skip((page - 1) * itemsPerPage).Take(itemsPerPage).ToList()
+                            //queryItems.ToList()
+                            //).ToList()
+                        }
+                        ).FirstOrDefault();
+                }
+                else
+                {
+                    data = (
+                        from ord in db.SoOrders
+                        join cust in db.ComCustomers on ord.ComCustomerId equals cust.ComCustomerId
+                        where ord.SoOrderId == orderId
+                        select new VMSoOrder
+                        {
+                            SoOrderId = ord.SoOrderId,
+                            OrderNo = ord.OrderNo,
+                            OrderDate = ord.OrderDate,
+                            ComCustomerId = ord.ComCustomerId,
+                            ComCustomerName = cust.CustomerName,
+                            Address = ord.Address,
+                            Items = queryItems.Skip((page - 1) * itemsPerPage).Take(itemsPerPage).ToList()
+                            //queryItems.ToList()
+                            //).ToList()
+                        }
+                        ).FirstOrDefault();
+                }
+                    
 
                 if (data != null)
                 {
-                    //VMSoItem? orderItem = (
-                        
-                    //    )
+                    //var queryTempItems = (
+                    //    from vw in db.ViewSoItems
+                    //    select new VMSoItem
+                    //    {
+                    //        SoItemId = vw.SoItemId,
+                    //        SoOrderId = vw.SoOrderId,
+                    //        ItemName = vw.ItemName,
+                    //        Quantity = vw.Quantity,
+                    //        Price = vw.Price
+                    //    }
+                    //    );
+
+                    //List<VMSoItem>?  tempItems = queryTempItems.ToList();
+
+                    //List<VMSoItem>? tempAddedItems = tempItems.Where(x => x.SoItemId == 0 && x.SoOrderId == orderId).ToList();
+
+                    //List<VMSoItem>? tempEditedItems = tempItems.Where(x => x.SoItemId != 0 && x.SoOrderId == orderId).ToList();
+
+                    //List<VMSoItem>? tempDeletedItems = tempItems.Where(x => x.SoItemId != 0 && x.SoOrderId == 0).ToList();
 
                     response.StatusCode = HttpStatusCode.OK;
                     response.Message = $"{HttpStatusCode.OK} - Successfully fetched the data";
                     response.Data = data;
+                    
+                    //if (tempDeletedItems != null )
+                    //{
+                    //    foreach (VMSoItem item in tempDeletedItems)
+                    //    {
+                    //        response.Data.Items = response.Data.Items.Where(x => x.SoItemId != item.SoItemId).ToList();
+                    //    }
+                    //}
+
+                    
                     response.TotalData = queryItems.Count();
                     foreach (VMSoItem dataItem in queryItems.ToList())
                     {
@@ -261,38 +330,89 @@ namespace OrderItemDataAccess
                     {
                         foreach (VMSoItem itemData in data.Items)
                         {
-                            VMSoItem? existingItemData = (
-                                from item in db.SoItems
-                                where item.SoItemId == itemData.SoItemId
-                                select new VMSoItem
+                            if (itemData.SoItemId < 0)
+                            {
+                                SoItem newItem = new SoItem
                                 {
-                                    SoItemId = item.SoItemId,
-                                    SoOrderId = item.SoOrderId,
-                                    ItemName = item.ItemName,
-                                    Quantity = item.Quantity,
-                                    Price = item.Price
-                                }
-                                ).FirstOrDefault();
+                                    SoOrderId = data.SoOrderId,
+                                    ItemName = itemData.ItemName,
+                                    Quantity = itemData.Quantity,
+                                    Price = itemData.Price
+                                };
 
-                            if (existingItemData == null)
-                            {
-                                dbTran.Rollback();
-                                response.StatusCode = HttpStatusCode.BadRequest;
-                                response.Message = $"{HttpStatusCode.BadRequest} - Item data not found!";
-                                return response;
+                                db.Add(newItem);
+                                db.SaveChanges();
                             }
-
-                            SoItem updatedItemData = new SoItem
+                            else if (itemData.SoOrderId > 0)
                             {
-                                SoItemId = existingItemData.SoItemId,
-                                SoOrderId = existingItemData.SoOrderId,
-                                ItemName = itemData.ItemName,
-                                Quantity = itemData.Quantity,
-                                Price = itemData.Price
-                            };
+                                VMSoItem? existingItemData = (
+                                    from item in db.SoItems
+                                    where item.SoItemId == itemData.SoItemId
+                                    select new VMSoItem
+                                    {
+                                        SoItemId = item.SoOrderId,
+                                        SoOrderId = item.SoOrderId,
+                                        ItemName = item.ItemName,
+                                        Quantity = itemData.Quantity,
+                                        Price = itemData.Price
+                                    }
+                                    ).FirstOrDefault();
 
-                            db.Update(updatedItemData);
-                            db.SaveChanges();
+                                if (existingItemData == null)
+                                {
+                                    dbTran.Rollback();
+                                    response.StatusCode = HttpStatusCode.BadRequest;
+                                    response.Message = $"{HttpStatusCode.BadRequest} - No Item data found!";
+                                    return response;
+                                }
+
+                                SoItem updatedItemData = new SoItem
+                                {
+                                    SoItemId = itemData.SoItemId,
+                                    SoOrderId = data.SoOrderId,
+                                    ItemName = itemData.ItemName,
+                                    Quantity = itemData.Quantity,
+                                    Price = itemData.Price
+                                };
+
+                                db.Update(updatedItemData);
+                                db.SaveChanges();
+                            }
+                            else
+                            {
+                                VMSoItem? existingItemData = (
+                                    from item in db.SoItems
+                                    where item.SoItemId == itemData.SoItemId
+                                    select new VMSoItem
+                                    {
+                                        SoItemId = item.SoOrderId,
+                                        SoOrderId = item.SoOrderId,
+                                        ItemName = item.ItemName,
+                                        Quantity = itemData.Quantity,
+                                        Price = itemData.Price
+                                    }
+                                    ).FirstOrDefault();
+
+                                if (existingItemData == null)
+                                {
+                                    dbTran.Rollback();
+                                    response.StatusCode = HttpStatusCode.BadRequest;
+                                    response.Message = $"{HttpStatusCode.BadRequest} - No Item data found!";
+                                    return response;
+                                }
+
+                                SoItem deletedItemData = new SoItem
+                                {
+                                    SoItemId = itemData.SoItemId,
+                                    SoOrderId = data.SoOrderId,
+                                    ItemName = itemData.ItemName,
+                                    Quantity = itemData.Quantity,
+                                    Price = itemData.Price
+                                };
+
+                                db.Remove(deletedItemData);
+                                db.SaveChanges();
+                            }                                                         
                         }
                     }
 
