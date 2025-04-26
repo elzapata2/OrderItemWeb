@@ -77,3 +77,4 @@ C:\Users\Zapata\Documents\.NET Projects\Git\OrderItemWeb\OrderItemWeb\obj\Debug\
 C:\Users\Zapata\Documents\.NET Projects\Git\OrderItemWeb\OrderItemWeb\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\Zapata\Documents\.NET Projects\Git\OrderItemWeb\OrderItemWeb\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\Zapata\Documents\.NET Projects\Git\OrderItemWeb\OrderItemWeb\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Zapata\Documents\.NET Projects\Git\OrderItemWeb\OrderItemWeb\obj\Debug\net8.0\staticwebassets.build.json

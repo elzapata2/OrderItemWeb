@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OrderItemWeb")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c0ae23648fc1b698b28d18d9f307dc12ca8ba974")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+73d1d0c7ec5946a3ab7ac2ae86277f5dafcfe76e")]
 [assembly: System.Reflection.AssemblyProductAttribute("OrderItemWeb")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OrderItemWeb")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
