@@ -53,6 +53,9 @@
                 <div class="input-group mb-3">
                     <label class="input-group-text col-3 text-light">Order Date</label>
                     <input id="orderDate" type="text" class="form-control col-9" name="OrderDate" value="@ViewBag.OrderDate" required />
+                    <div class="input-group-append">
+                        <button id="btnClearDate" class="btn btn-secondary">Clear</button>
+                    </div>
                 </div>
                 <p id="orderDateErr" style="color: red"></p>
             </div>
@@ -280,6 +283,10 @@
             dateFormat: "Y-m-d"
         });
 
+        $("#btnClearDate").click(function(e) {
+            $("#orderDate").val("");
+        })
+
         $("#btnAddItem").click(function(e) {
             pageSize = parseInt($("#pageSize").val());
             CallAjaxToNextPage(totalPages, pageSize);
@@ -316,7 +323,7 @@
             td.siblings(".name").prop("contenteditable", true);
             td.siblings(".qty").prop("contenteditable", true);
             td.siblings(".price").prop("contenteditable", true);
-            td.siblings(".total").prop("contenteditable", true);
+            // td.siblings(".total").prop("contenteditable", true);
 
             totalOrderItem -= parseInt(td.siblings(".qty").text());
             totalOrderAmount -= parseFloat(td.siblings(".price").text())
@@ -345,6 +352,11 @@
         $(document).on('click', '.btn-info', function(e) {
             var td = $(this).parent().parent();
 
+            if (td.siblings(".name").text() == null || td.siblings(".name").text() == "") {
+                toastAlert("Item Name must be filled!", "info", 5000);
+                return;
+            }
+
             var price = parseFloat(td.siblings(".price").text().trim())
 
             td.siblings(".price").text(price.toLocaleString('id-ID', {
@@ -355,6 +367,7 @@
             var qty = parseInt(td.siblings(".qty").text().trim())
 
             if (isNaN(price) || isNaN(qty)) {
+                toastAlert("Quantity and price field must be a valid number!", "info", 5000);
                 return;
             }
 
