@@ -72,6 +72,8 @@ namespace OrderItemWeb.Controllers
                 ViewBag.TotalPages = 1;
             }
 
+            ViewBag.Title = "Sale Orders";
+
             return View(response.Data);
         }
 
@@ -108,6 +110,8 @@ namespace OrderItemWeb.Controllers
                 customers.Message = $"{HttpStatusCode.InternalServerError} - From OrderController.CreateEdit: {ex.Message}";
                 customers.Data = new List<VMComCustomer>();
             }
+
+            ViewBag.Title = "Add Sale Orders";
 
             return View();
         }
@@ -171,6 +175,8 @@ namespace OrderItemWeb.Controllers
             ViewBag.OrderId = orderId;
 
             ViewBag.TotalPages = (response.TotalData % ViewBag.PageSize != 0) ? response.TotalData / ViewBag.PageSize + 1 : response.TotalData / ViewBag.PageSize;
+
+            ViewBag.Title = "Edit Sale Orders";
 
             return View(response.Data);
         }
